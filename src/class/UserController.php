@@ -36,19 +36,16 @@ class UserController extends Controller
         if (isset($_GET["id"])) {
             $dir = '/var/www/data/users/';
             $fileUsers = $dir . $_GET["id"] . '.json';
-            $readFile = file_get_contents($fileUsers);
-            $this->usersData = json_decode($readFile, true);
         }
-        $model = new userModel();
-        $this->result = $model->edit($this->usersData);
-        $model->save($fileUsers, $this->result);
 
-//        if ($this->result["correct"]) {
-//            $json_string = json_encode($this->result);
-//            file_put_contents($fileUsers, $json_string);
-//            var_dump($fileUsers);
-//            //header('Location: /users');
-//        }
+        $model = new userModel();
+//        $vadator = Validator::validate($_REQUEST);
+        $this->result = $model->edit($_REQUEST);
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $this->usersData = json_encode($_REQUEST, true);
+            $model->save($fileUsers, $this->result);
+        }
 
         $this->view($this->result);
     }

@@ -14,7 +14,7 @@
         <h3 class="form-text">Last Name</h3>
         <input class="input" type="last name" placeholder="last name" name="lastName" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["lastName"];}else{echo $userData["lastName"];} ?>" /><p class="error"><?php echo $lastNameErr ?></p>
         <h3 class="form-text">Birthday</h3>
-        <input class="input" type="date" placeholder="birthday" name="date" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["date"];}else{echo $userData["birthday"];} ?>" /><p class="error"><?php echo $birthdayErr ?></p>
+        <input class="input" type="date" placeholder="birthday" name="birthday" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["birthday"];}else{echo $userData["birthday"];} ?>" /><p class="error"><?php echo $birthdayErr ?></p>
         <h3 class="form-text">Active</h3>
         <input class="input-check" type="checkbox" name="active" />
         <input class="input" type="submit" <?php if (isset($_GET["id"])) {?> name="submitEdit"<?php }else{ ?> name="submitCreate"<?php } ?> <?php if (isset($_GET["id"])) {?> value="Edit"<?php }else{ ?> value="Create"<?php } ?>/>
