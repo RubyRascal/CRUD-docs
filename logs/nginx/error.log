@@ -1,0 +1,427 @@
+2021/09/15 13:59:08 [notice] 1#1: using the "epoll" event method
+2021/09/15 13:59:08 [notice] 1#1: nginx/1.21.3
+2021/09/15 13:59:08 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/15 13:59:08 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/15 13:59:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/15 13:59:08 [notice] 1#1: start worker processes
+2021/09/15 13:59:08 [notice] 1#1: start worker process 22
+2021/09/15 13:59:08 [notice] 1#1: start worker process 23
+2021/09/15 13:59:08 [notice] 1#1: start worker process 24
+2021/09/15 13:59:08 [notice] 1#1: start worker process 25
+2021/09/15 14:03:48 [error] 22#22: *1 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/15 14:14:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/15 14:14:35 [notice] 22#22: gracefully shutting down
+2021/09/15 14:14:35 [notice] 23#23: gracefully shutting down
+2021/09/15 14:14:35 [notice] 22#22: exiting
+2021/09/15 14:14:35 [notice] 23#23: exiting
+2021/09/15 14:14:35 [notice] 22#22: exit
+2021/09/15 14:14:35 [notice] 23#23: exit
+2021/09/15 14:14:35 [notice] 24#24: gracefully shutting down
+2021/09/15 14:14:35 [notice] 25#25: gracefully shutting down
+2021/09/15 14:14:35 [notice] 24#24: exiting
+2021/09/15 14:14:35 [notice] 25#25: exiting
+2021/09/15 14:14:35 [notice] 24#24: exit
+2021/09/15 14:14:35 [notice] 25#25: exit
+2021/09/15 14:14:35 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/15 14:14:35 [notice] 1#1: worker process 23 exited with code 0
+2021/09/15 14:14:35 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/15 14:14:35 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/15 14:14:35 [notice] 1#1: worker process 24 exited with code 0
+2021/09/15 14:14:35 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/15 14:14:35 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/15 14:14:35 [notice] 1#1: worker process 25 exited with code 0
+2021/09/15 14:14:35 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/15 14:14:35 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/15 14:14:35 [notice] 1#1: worker process 22 exited with code 0
+2021/09/15 14:14:35 [notice] 1#1: exit
+2021/09/16 05:37:25 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:37:31 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:37:36 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:37:42 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:37:50 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:37:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:38:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:38:17 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:38:36 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:39:07 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:40:03 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/16 05:41:09 [notice] 1#1: using the "epoll" event method
+2021/09/16 05:41:09 [notice] 1#1: nginx/1.21.3
+2021/09/16 05:41:09 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/16 05:41:09 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/16 05:41:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/16 05:41:09 [notice] 1#1: start worker processes
+2021/09/16 05:41:09 [notice] 1#1: start worker process 22
+2021/09/16 05:41:09 [notice] 1#1: start worker process 23
+2021/09/16 05:41:09 [notice] 1#1: start worker process 24
+2021/09/16 05:41:09 [notice] 1#1: start worker process 25
+2021/09/16 05:41:24 [error] 22#22: *1 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 05:50:27 [error] 22#22: *9 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 05:51:40 [error] 22#22: *15 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 05:52:28 [error] 22#22: *15 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 05:54:02 [error] 22#22: *20 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 05:56:54 [error] 22#22: *22 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/16 08:58:34 [error] 22#22: *284 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create.php"
+2021/09/16 10:41:54 [error] 22#22: *376 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create.php"
+2021/09/16 11:03:17 [error] 22#22: *394 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create.php"
+2021/09/16 11:14:05 [error] 22#22: *407 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/16 11:41:16 [error] 22#22: *464 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/update.php"
+2021/09/16 11:58:10 [error] 22#22: *475 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create.php"
+2021/09/16 12:19:00 [error] 22#22: *481 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/16 14:03:22 [error] 22#22: *593 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/func.php"
+2021/09/16 14:04:30 [error] 22#22: *595 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/func.php"
+2021/09/16 14:05:32 [error] 22#22: *597 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/func.php"
+2021/09/16 14:12:10 [error] 22#22: *605 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/func.php"
+2021/09/16 14:14:03 [error] 22#22: *611 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/func.php"
+2021/09/16 14:42:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/16 14:42:57 [notice] 23#23: gracefully shutting down
+2021/09/16 14:42:57 [notice] 25#25: gracefully shutting down
+2021/09/16 14:42:57 [notice] 23#23: exiting
+2021/09/16 14:42:57 [notice] 25#25: exiting
+2021/09/16 14:42:57 [notice] 25#25: exit
+2021/09/16 14:42:57 [notice] 23#23: exit
+2021/09/16 14:42:57 [notice] 22#22: gracefully shutting down
+2021/09/16 14:42:57 [notice] 24#24: gracefully shutting down
+2021/09/16 14:42:57 [notice] 22#22: exiting
+2021/09/16 14:42:57 [notice] 24#24: exiting
+2021/09/16 14:42:57 [notice] 22#22: exit
+2021/09/16 14:42:57 [notice] 24#24: exit
+2021/09/16 14:42:57 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/16 14:42:57 [notice] 1#1: worker process 24 exited with code 0
+2021/09/16 14:42:57 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/16 14:42:57 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/16 14:42:57 [notice] 1#1: worker process 23 exited with code 0
+2021/09/16 14:42:57 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/16 14:42:57 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/16 14:42:57 [notice] 1#1: worker process 25 exited with code 0
+2021/09/16 14:42:57 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/16 14:42:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/16 14:42:57 [notice] 1#1: worker process 22 exited with code 0
+2021/09/16 14:42:57 [notice] 1#1: exit
+2021/09/17 05:45:15 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:21 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:27 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:33 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:47 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:45:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:46:08 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:46:26 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:46:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:47:54 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:48:59 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/17 05:50:04 [notice] 1#1: using the "epoll" event method
+2021/09/17 05:50:04 [notice] 1#1: nginx/1.21.3
+2021/09/17 05:50:04 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/17 05:50:04 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/17 05:50:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/17 05:50:04 [notice] 1#1: start worker processes
+2021/09/17 05:50:04 [notice] 1#1: start worker process 22
+2021/09/17 05:50:04 [notice] 1#1: start worker process 23
+2021/09/17 05:50:04 [notice] 1#1: start worker process 24
+2021/09/17 05:50:04 [notice] 1#1: start worker process 25
+2021/09/17 08:04:40 [error] 23#23: *91 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/17 08:07:35 [error] 23#23: *98 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/17 09:56:56 [error] 23#23: *207 open() "/var/www/<br /><b>Warning</b>:  Cannot modify header information - headers already sent by (output started at /var/www/index.php:1) in <b>/var/www/index.php</b> on line <b>43</b><br />" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Cannot%20modify%20header%20information%20-%20headers%20already%20sent%20by%20(output%20started%20at%20/var/www/index.php:1)%20in%20%3Cb%3E/var/www/index.php%3C/b%3E%20on%20line%20%3Cb%3E43%3C/b%3E%3Cbr%20/%3E HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/17 09:57:08 [error] 23#23: *207 open() "/var/www/<br /><b>Warning</b>:  Cannot modify header information - headers already sent by (output started at /var/www/index.php:1) in <b>/var/www/index.php</b> on line <b>43</b><br />" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Cannot%20modify%20header%20information%20-%20headers%20already%20sent%20by%20(output%20started%20at%20/var/www/index.php:1)%20in%20%3Cb%3E/var/www/index.php%3C/b%3E%20on%20line%20%3Cb%3E43%3C/b%3E%3Cbr%20/%3E HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/17 09:57:19 [error] 23#23: *207 open() "/var/www/<br /><b>Warning</b>:  Cannot modify header information - headers already sent by (output started at /var/www/index.php:1) in <b>/var/www/index.php</b> on line <b>43</b><br />" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Cannot%20modify%20header%20information%20-%20headers%20already%20sent%20by%20(output%20started%20at%20/var/www/index.php:1)%20in%20%3Cb%3E/var/www/index.php%3C/b%3E%20on%20line%20%3Cb%3E43%3C/b%3E%3Cbr%20/%3E HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/17 10:45:37 [error] 23#23: *254 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/update.php?id=1"
+2021/09/17 10:48:34 [error] 23#23: *256 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/update.php?id=1"
+2021/09/17 14:24:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/17 14:24:10 [notice] 23#23: gracefully shutting down
+2021/09/17 14:24:10 [notice] 22#22: gracefully shutting down
+2021/09/17 14:24:10 [notice] 23#23: exiting
+2021/09/17 14:24:10 [notice] 22#22: exiting
+2021/09/17 14:24:10 [notice] 22#22: exit
+2021/09/17 14:24:10 [notice] 23#23: exit
+2021/09/17 14:24:10 [notice] 24#24: gracefully shutting down
+2021/09/17 14:24:10 [notice] 24#24: exiting
+2021/09/17 14:24:10 [notice] 24#24: exit
+2021/09/17 14:24:10 [notice] 25#25: gracefully shutting down
+2021/09/17 14:24:10 [notice] 25#25: exiting
+2021/09/17 14:24:10 [notice] 25#25: exit
+2021/09/17 14:24:10 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/17 14:24:10 [notice] 1#1: worker process 25 exited with code 0
+2021/09/17 14:24:10 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/17 14:24:10 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/17 14:24:10 [notice] 1#1: worker process 24 exited with code 0
+2021/09/17 14:24:10 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/17 14:24:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/17 14:24:10 [notice] 1#1: worker process 22 exited with code 0
+2021/09/17 14:24:10 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/17 14:24:10 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/17 14:24:10 [notice] 1#1: worker process 23 exited with code 0
+2021/09/17 14:24:10 [notice] 1#1: exit
+2021/09/20 05:43:37 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:43:43 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:43:48 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:43:54 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:44:04 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:44:11 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:44:20 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:44:32 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:44:50 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/20 05:45:21 [notice] 1#1: using the "epoll" event method
+2021/09/20 05:45:21 [notice] 1#1: nginx/1.21.3
+2021/09/20 05:45:21 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/20 05:45:21 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/20 05:45:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/20 05:45:21 [notice] 1#1: start worker processes
+2021/09/20 05:45:21 [notice] 1#1: start worker process 24
+2021/09/20 05:45:21 [notice] 1#1: start worker process 25
+2021/09/20 05:45:21 [notice] 1#1: start worker process 26
+2021/09/20 05:45:21 [notice] 1#1: start worker process 27
+2021/09/20 05:45:23 [error] 24#24: *1 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/20 06:41:42 [error] 24#24: *26 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/index.php"
+2021/09/20 07:11:37 [error] 24#24: *73 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/20 07:57:59 [error] 24#24: *91 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create_doc.php"
+2021/09/20 07:58:39 [error] 24#24: *93 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create_doc.php"
+2021/09/20 08:07:40 [error] 24#24: *104 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/create_doc.php"
+2021/09/20 11:07:51 [error] 24#24: *179 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/docs.php"
+2021/09/20 11:09:09 [error] 24#24: *181 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/docs.php"
+2021/09/20 11:14:00 [error] 24#24: *185 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/docs.php"
+2021/09/20 11:35:30 [error] 24#24: *201 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/docs.php"
+2021/09/20 12:42:49 [error] 24#24: *296 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/engine.php?/user/edit/&id=1"
+2021/09/20 12:43:09 [error] 24#24: *303 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/users.php"
+2021/09/20 12:47:03 [error] 24#24: *308 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/users.php"
+2021/09/20 12:56:41 [error] 24#24: *328 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/engine.php?/user/edit/&id=1"
+2021/09/20 14:38:59 [error] 24#24: *390 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/engine.php?/AdminPanel"
+2021/09/20 15:10:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/20 15:10:44 [notice] 25#25: gracefully shutting down
+2021/09/20 15:10:44 [notice] 26#26: gracefully shutting down
+2021/09/20 15:10:44 [notice] 24#24: gracefully shutting down
+2021/09/20 15:10:44 [notice] 27#27: gracefully shutting down
+2021/09/20 15:10:44 [notice] 25#25: exiting
+2021/09/20 15:10:44 [notice] 26#26: exiting
+2021/09/20 15:10:44 [notice] 24#24: exiting
+2021/09/20 15:10:44 [notice] 27#27: exiting
+2021/09/20 15:10:44 [notice] 26#26: exit
+2021/09/20 15:10:44 [notice] 25#25: exit
+2021/09/20 15:10:44 [notice] 24#24: exit
+2021/09/20 15:10:44 [notice] 27#27: exit
+2021/09/20 15:10:44 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2021/09/20 15:10:44 [notice] 1#1: worker process 27 exited with code 0
+2021/09/20 15:10:44 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/20 15:10:44 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/20 15:10:44 [notice] 1#1: worker process 24 exited with code 0
+2021/09/20 15:10:44 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/20 15:10:44 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/09/20 15:10:44 [notice] 1#1: worker process 26 exited with code 0
+2021/09/20 15:10:44 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/20 15:10:44 [notice] 1#1: worker process 25 exited with code 0
+2021/09/20 15:10:44 [notice] 1#1: exit
+2021/09/21 05:47:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:47:51 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:47:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:02 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:10 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:17 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:26 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:38 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:48:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:49:27 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:50:23 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:51:29 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:52:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:53:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:54:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:55:51 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:56:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:58:01 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 05:59:07 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:00:12 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:01:18 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:02:23 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:03:29 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:04:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:05:39 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:06:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:07:50 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:08:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:10:01 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:11:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:12:12 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:13:17 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:14:23 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:15:28 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:16:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:17:39 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:18:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:19:50 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:20:55 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:22:01 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:23:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:24:12 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:11
+2021/09/21 06:25:17 [notice] 1#1: using the "epoll" event method
+2021/09/21 06:25:17 [notice] 1#1: nginx/1.21.3
+2021/09/21 06:25:17 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/21 06:25:17 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/21 06:25:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/21 06:25:17 [notice] 1#1: start worker processes
+2021/09/21 06:25:17 [notice] 1#1: start worker process 22
+2021/09/21 06:25:17 [notice] 1#1: start worker process 23
+2021/09/21 06:25:17 [notice] 1#1: start worker process 24
+2021/09/21 06:25:17 [notice] 1#1: start worker process 25
+2021/09/21 06:25:32 [error] 22#22: *1 open() "/var/www/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", host: "crud.local", referrer: "http://crud.local/"
+2021/09/21 06:29:20 [error] 22#22: *3 open() "/var/www/192334019fjspdkjf" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /192334019fjspdkjf HTTP/1.1", host: "crud.local"
+2021/09/21 06:30:44 [error] 22#22: *8 open() "/var/www/engine2934u09/docs" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /engine2934u09/docs HTTP/1.1", host: "crud.local"
+2021/09/21 06:31:29 [error] 22#22: *8 open() "/var/www/tfuhbjnnlkl';,;kh" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /tfuhbjnnlkl';,;kh HTTP/1.1", host: "crud.local"
+2021/09/21 06:36:35 [error] 22#22: *19 open() "/var/www/ijcjaocpla[pwl" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /ijcjaocpla[pwl HTTP/1.1", host: "crud.local"
+2021/09/21 06:38:07 [error] 22#22: *23 open() "/var/www/sdlf[sdvl[spvs" failed (2: No such file or directory), client: 172.18.0.1, server: crud.local, request: "GET /sdlf[sdvl[spvs HTTP/1.1", host: "crud.local"
+2021/09/21 08:18:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/21 08:18:10 [notice] 22#22: gracefully shutting down
+2021/09/21 08:18:10 [notice] 25#25: gracefully shutting down
+2021/09/21 08:18:10 [notice] 22#22: exiting
+2021/09/21 08:18:10 [notice] 25#25: exiting
+2021/09/21 08:18:10 [notice] 22#22: exit
+2021/09/21 08:18:10 [notice] 25#25: exit
+2021/09/21 08:18:10 [notice] 23#23: gracefully shutting down
+2021/09/21 08:18:10 [notice] 23#23: exiting
+2021/09/21 08:18:10 [notice] 23#23: exit
+2021/09/21 08:18:10 [notice] 24#24: gracefully shutting down
+2021/09/21 08:18:10 [notice] 24#24: exiting
+2021/09/21 08:18:10 [notice] 24#24: exit
+2021/09/21 08:18:10 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/21 08:18:10 [notice] 1#1: worker process 23 exited with code 0
+2021/09/21 08:18:10 [notice] 1#1: worker process 25 exited with code 0
+2021/09/21 08:18:10 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/21 08:18:10 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/21 08:18:10 [notice] 1#1: worker process 24 exited with code 0
+2021/09/21 08:18:10 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/21 08:18:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/21 08:18:10 [notice] 1#1: worker process 22 exited with code 0
+2021/09/21 08:18:10 [notice] 1#1: exit
+2021/09/21 08:18:21 [notice] 1#1: using the "epoll" event method
+2021/09/21 08:18:21 [notice] 1#1: nginx/1.21.3
+2021/09/21 08:18:21 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/21 08:18:21 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/21 08:18:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/21 08:18:21 [notice] 1#1: start worker processes
+2021/09/21 08:18:21 [notice] 1#1: start worker process 22
+2021/09/21 08:18:21 [notice] 1#1: start worker process 23
+2021/09/21 08:18:21 [notice] 1#1: start worker process 24
+2021/09/21 08:18:21 [notice] 1#1: start worker process 25
+2021/09/21 10:12:46 [error] 22#22: *98 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:15:29 [error] 22#22: *113 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:18:44 [error] 22#22: *115 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:20:55 [error] 22#22: *119 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/create"
+2021/09/21 10:22:00 [error] 22#22: *119 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:22:30 [error] 22#22: *119 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:26:49 [error] 22#22: *130 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=1"
+2021/09/21 10:34:41 [error] 22#22: *137 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=3"
+2021/09/21 10:37:42 [error] 22#22: *146 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=3"
+2021/09/21 10:37:53 [error] 22#22: *146 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "POST /user/edit/check_and_save_users.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/user/edit/?id=3"
+2021/09/21 14:19:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/21 14:19:17 [notice] 24#24: gracefully shutting down
+2021/09/21 14:19:17 [notice] 25#25: gracefully shutting down
+2021/09/21 14:19:17 [notice] 23#23: gracefully shutting down
+2021/09/21 14:19:17 [notice] 24#24: exiting
+2021/09/21 14:19:17 [notice] 25#25: exiting
+2021/09/21 14:19:17 [notice] 23#23: exiting
+2021/09/21 14:19:17 [notice] 24#24: exit
+2021/09/21 14:19:17 [notice] 23#23: exit
+2021/09/21 14:19:17 [notice] 25#25: exit
+2021/09/21 14:19:17 [notice] 22#22: gracefully shutting down
+2021/09/21 14:19:17 [notice] 22#22: exiting
+2021/09/21 14:19:17 [notice] 22#22: exit
+2021/09/21 14:19:17 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/21 14:19:17 [notice] 1#1: worker process 25 exited with code 0
+2021/09/21 14:19:17 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/21 14:19:17 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/21 14:19:17 [notice] 1#1: worker process 24 exited with code 0
+2021/09/21 14:19:17 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/21 14:19:17 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/21 14:19:17 [notice] 1#1: worker process 23 exited with code 0
+2021/09/21 14:19:17 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/21 14:19:17 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/21 14:19:17 [notice] 1#1: worker process 22 exited with code 0
+2021/09/21 14:19:17 [notice] 1#1: exit
+2021/09/22 05:36:48 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:36:54 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:00 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:13 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:20 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:28 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:37:58 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:38:29 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:39:26 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:40:31 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:41:37 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:42:42 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:43:48 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:44:53 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:45:59 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:47:04 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:48:09 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:49:15 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:50:21 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:51:27 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:52:32 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:53:38 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:54:43 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:55:49 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:56:55 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:58:00 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/22 05:59:05 [notice] 1#1: using the "epoll" event method
+2021/09/22 05:59:05 [notice] 1#1: nginx/1.21.3
+2021/09/22 05:59:05 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/22 05:59:05 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/22 05:59:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/22 05:59:05 [notice] 1#1: start worker processes
+2021/09/22 05:59:05 [notice] 1#1: start worker process 22
+2021/09/22 05:59:05 [notice] 1#1: start worker process 23
+2021/09/22 05:59:05 [notice] 1#1: start worker process 24
+2021/09/22 05:59:05 [notice] 1#1: start worker process 25
+2021/09/22 11:42:43 [error] 22#22: *206 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local"
+2021/09/22 15:03:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/22 15:03:56 [notice] 22#22: gracefully shutting down
+2021/09/22 15:03:56 [notice] 23#23: gracefully shutting down
+2021/09/22 15:03:56 [notice] 22#22: exiting
+2021/09/22 15:03:56 [notice] 23#23: exiting
+2021/09/22 15:03:56 [notice] 22#22: exit
+2021/09/22 15:03:56 [notice] 23#23: exit
+2021/09/22 15:03:56 [notice] 25#25: gracefully shutting down
+2021/09/22 15:03:56 [notice] 25#25: exiting
+2021/09/22 15:03:56 [notice] 25#25: exit
+2021/09/22 15:03:56 [notice] 24#24: gracefully shutting down
+2021/09/22 15:03:56 [notice] 24#24: exiting
+2021/09/22 15:03:56 [notice] 24#24: exit
+2021/09/22 15:03:56 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/22 15:03:56 [notice] 1#1: worker process 22 exited with code 0
+2021/09/22 15:03:56 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/22 15:03:56 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/22 15:03:56 [notice] 1#1: worker process 23 exited with code 0
+2021/09/22 15:03:56 [notice] 1#1: worker process 25 exited with code 0
+2021/09/22 15:03:56 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/22 15:03:56 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/22 15:03:56 [notice] 1#1: worker process 24 exited with code 0
+2021/09/22 15:03:56 [notice] 1#1: exit
+2021/09/23 05:34:09 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:14 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:20 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:26 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:32 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:39 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:34:48 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:35:00 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:35:18 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:35:49 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:36:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:37:51 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:38:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:40:02 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:41:07 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:42:13 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:43:18 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/23 05:44:24 [notice] 1#1: using the "epoll" event method
+2021/09/23 05:44:24 [notice] 1#1: nginx/1.21.3
+2021/09/23 05:44:24 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/23 05:44:24 [notice] 1#1: OS: Linux 5.11.0-34-generic
+2021/09/23 05:44:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/23 05:44:24 [notice] 1#1: start worker processes
+2021/09/23 05:44:24 [notice] 1#1: start worker process 23
+2021/09/23 05:44:24 [notice] 1#1: start worker process 24
+2021/09/23 05:44:24 [notice] 1#1: start worker process 25
+2021/09/23 05:44:24 [notice] 1#1: start worker process 26
