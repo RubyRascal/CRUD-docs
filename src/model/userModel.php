@@ -1,10 +1,22 @@
 <?php
 class userModel
 {
-    public function save($fileUsers, $result)
+    public function save($i, $result)
     {
+        $dir = '/var/www/data/users/';
+        $fileUsers = $dir . $i . '.json';
+        while (is_file($fileUsers)) {
+            $fileUsers = $dir . $i++ . '.json';
+        }
+        if (isset($_GET["id"])){
+            $fileUsers = $dir . $_GET["id"] . '.json';
+        }
+        var_dump($result);
+        var_dump($fileUsers);
+
         if ($result["correct"]) {
             $json_string = json_encode($result);
+
             file_put_contents($fileUsers, $json_string);
             //header('Location: /users');
         }
@@ -62,6 +74,11 @@ class userModel
 
     public function create()
     {
+        //не работает сохранение
+
+
+
+
 //        if(isset($_POST["submitCreate"])){
 //            $i = 1;
 //            $fileUsers = 'data/users/' . $i . '.json';

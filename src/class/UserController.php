@@ -19,14 +19,15 @@ class UserController extends Controller
     {
         if(isset($_POST["submitCreate"])){
             $i = 1;
-            $fileUsers = 'data/users/' . $i . '.json';
-            while (is_file($fileUsers)) {
-                $fileUsers = 'data/users/' . $i++ . '.json';
-            }
+//            $fileUsers = 'data/users/' . $i . '.json';
+//            while (is_file($fileUsers)) {
+//                $fileUsers = 'data/users/' . $i++ . '.json';
+//            }
+            $model = new userModel();
+            $this->result=$model->create();
+            $model->save($i, $this->result);
         }
-        $model = new userModel();
-        $model->create();
-        $model->save($fileUsers, $this->result);
+
         $this->view($this->result);
     }
 
