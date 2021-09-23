@@ -1,36 +1,27 @@
 <?php
 class userModel
 {
-    public $loginErr;
-    public $firstNameErr;
-    public $lastNameErr;
-    public $birthdayErr;
-    public function sayHello()
+    public function save($fileUsers, $result)
     {
-        echo "Hello user";
+        if ($result["correct"]) {
+            $json_string = json_encode($result);
+            file_put_contents($fileUsers, $json_string);
+            //header('Location: /users');
+        }
     }
 
-    public function edit()
+    public function edit($uData)
     {
-        if (isset($_GET["id"])) {
-            $dir = '/var/www/data/users/';
-            $fileUsers = $dir . $_GET["id"] . '.json';
-            $readFile = file_get_contents($fileUsers);
-            $usersData = json_decode($readFile, true);    
-        }
-        var_dump($usersData);
-        
         $userData = array(
-            'login' => $usersData["login"],
-            'firstName' => $usersData["firstName"],
-            'lastName' => $usersData["lastName"],
-            'birthday' => $usersData["date"],
-            'active' => $usersData["active"]
+            'login' => $uData["login"],
+            'firstName' => $uData["firstName"],
+            'lastName' => $uData["lastName"],
+            'birthday' => $uData["birthday"],
+            'active' => $uData["active"]
         );
-        
-        
+
         $formIsCorrect = true;
-        
+
         if (empty($userData["login"])) {
             $this->loginErr = "Введите логин.";
             $formIsCorrect = false;
@@ -40,7 +31,7 @@ class userModel
                 $formIsCorrect = false;
             }
         }
-        
+
         if (empty($userData["firstName"])) {
             $this->firstNameErr = "Введите имя.";
             $formIsCorrect = false;
@@ -60,39 +51,32 @@ class userModel
                 $formIsCorrect = false;
             }
         }
-        
+
         if (empty($userData["birthday"])) {
             $this->birthdayErr = "Введите дату.";
             $formIsCorrect = false;
         }
-        
-        if ($formIsCorrect) { 
-            $json_string = json_encode($userData);
-            file_put_contents($fileUsers, $json_string);
-            header('Location: /users');
-            exit;
-        }
+        $userData["correct"] = $formIsCorrect;
         return $userData;
-        
     }
 
     public function create()
     {
-        if(isset($_POST["submitCreate"])){
-            $i = 1;
-            $fileUsers = 'data/users/' . $i . '.json';
-            while (is_file($fileUsers)) {
-                $fileUsers = 'data/users/' . $i++ . '.json';
-            }
-        }
+//        if(isset($_POST["submitCreate"])){
+//            $i = 1;
+//            $fileUsers = 'data/users/' . $i . '.json';
+//            while (is_file($fileUsers)) {
+//                $fileUsers = 'data/users/' . $i++ . '.json';
+//            }
+//        }
         $userData = array(
             'login' => $_POST["login"],
             'firstName' => $_POST["firstName"],
             'lastName' => $_POST["lastName"],
-            'birthday' => $_POST["date"],
+            'birthday' => $_POST["birthday"],
             'active' => $_POST["active"]
         );
-        
+
         $formIsCorrect = true;
         
         if (empty($userData["login"])) {
@@ -129,12 +113,14 @@ class userModel
             $birthdayErr = "Введите дату.";
             $formIsCorrect = false;
         }
-        
-        if ($formIsCorrect) { 
-            $json_string = json_encode($userData);
-            file_put_contents($fileUsers, $json_string);
-            header('Location: /users');
-            exit;
-        }
+        $userData["correct"] = $formIsCorrect;
+//        if ($formIsCorrect) {
+//            $json_string = json_encode($userData);
+//            file_put_contents($fileUsers, $json_string);
+//            header('Location: /users');
+//            exit;
+//        }
+        return $userData;
+
     }
 }

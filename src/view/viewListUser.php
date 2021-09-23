@@ -2,8 +2,8 @@
 
 class viewListUser
 {
-    public function ViewListUser()
+    public function viewList()
     {
-        require 'listUsers.php';
+        require_once 'listUsers.php';
     }
 }

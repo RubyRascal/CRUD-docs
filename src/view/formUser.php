@@ -1,8 +1,4 @@
-<?php
-require_once 'model/userModel.php';
-?>
 <!DOCTYPE html>
-<?php  var_dump($_POST)?>
 <head>
     <title>User</title>
     <link rel="stylesheet" type="text/css" href="/style.css" />
