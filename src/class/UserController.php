@@ -1,30 +1,82 @@
 <?php
-require_once 'Controller.php';
-require 'model/userModel.php';
-require 'view/viewUser.php';
-class UserController extends Controller
+require_once 'model/userModel.php';
+require_once 'func_users.php';
+require_once 'view/viewListUser.php';
+require_once 'view/viewUser.php';
+class UserController
 {
-    public $loginErr;
-    public $firstNameErr;
-    public $lastNameErr;
-    public $birthdayErr;
-    public $usersData;
-    public $result;
-
     public function users()
     {
-        require_once 'view/listUsers.php';
+        $view = new viewListUser();
+        $view->ViewList();
     }
+
     public function create()
     {
-        if(isset($_POST["submitCreate"])){
-            $i = 1;
-            $model = new userModel();
-            $this->result=$model->create();
-            $model->save($i, $this->result);
-        }
+        $userData = array(
+            'login' => $_POST["login"],
+            'firstName' => $_POST["firstName"],
+            'lastName' => $_POST["lastName"],
+            'birthday' => $_POST["birthday"],
+            'active' => $_POST["active"]
+        );
 
-        $this->view($this->result);
+        $errors = array();
+
+        if(isset($_POST["submitCreate"])){
+
+            $model = new userModel();
+            $result=$model->create($userData);
+            $formIsCorrect = true;
+
+            if (empty($result["login"])) {
+                $loginErr = "Введите логин.";
+                $formIsCorrect = false;
+            } else {
+                if (strlen($result["login"]) < 8) {
+                    $loginErr = "Логин должен быть минимум 8 символов.";
+                    $formIsCorrect = false;
+                }
+            }
+
+            if (empty($result["firstName"])) {
+                $firstNameErr = "Введите имя.";
+                $formIsCorrect = false;
+            } else {
+                if (strlen($result["firstName"]) < 4) {
+                    $firstNameErr = "Имя должно быть не менее 4 символов.";
+                    $formIsCorrect = false;
+                }
+            }
+
+            if (empty($result["lastName"])) {
+                $lastNameErr = "Введите фамилию.";
+                $formIsCorrect = false;
+            } else {
+                if (strlen($result["lastName"]) < 6) {
+                    $lastNameErr = "Фамилия должна быть не менее 6 символов.";
+                    $formIsCorrect = false;
+                }
+            }
+
+            if (empty($result["birthday"])) {
+                $birthdayErr = "Введите дату.";
+                $formIsCorrect = false;
+            }
+
+            $errors = array(
+                "loginErr" => $loginErr,
+                "firstNameErr" => $firstNameErr,
+                "lastNameErr" => $lastNameErr,
+                "birthdayErr" => $birthdayErr
+            );
+            $result["correct"] = $formIsCorrect;
+        }
+        if ($formIsCorrect){
+            $model->save($result, $_GET["id"]);
+        }else{
+            $this->view($result, $errors);//возможно $this
+        }
     }
 
     public function edit()
@@ -32,24 +84,84 @@ class UserController extends Controller
         if (isset($_GET["id"])) {
             $dir = '/var/www/data/users/';
             $fileUsers = $dir . $_GET["id"] . '.json';
+            $readFile = file_get_contents($fileUsers);
+            $userArr = json_decode($readFile, true);
         }
+
+        $userData = array(
+            'login' => $userArr["login"],
+            'firstName' => $userArr["firstName"],
+            'lastName' => $userArr["lastName"],
+            'birthday' => $userArr["birthday"],
+            'active' => $userArr["active"]
+        );
+
+        $errors = array();
 
         $model = new userModel();
-        $this->result = $model->edit($_REQUEST);
+        $result = $model->edit($_REQUEST);
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $this->usersData = json_encode($_REQUEST, true);
-            $model->save($fileUsers, $this->result);
+        $formIsCorrect = true;
+
+        if (empty($result["login"])) {
+            $loginErr = "Введите логин.";
+            $formIsCorrect = false;
+        } else {
+            if (strlen($result["login"]) < 8) {
+                $loginErr = "Логин должен быть минимум 8 символов.";
+                $formIsCorrect = false;
+            }
         }
 
-        $this->view($this->result);
+        if (empty($result["firstName"])) {
+            $firstNameErr = "Введите имя.";
+            $formIsCorrect = false;
+        } else {
+            if (strlen($result["firstName"]) < 4) {
+                $firstNameErr = "Имя должно быть не менее 4 символов.";
+                $formIsCorrect = false;
+            }
+        }
+
+        if (empty($result["lastName"])) {
+            $lastNameErr = "Введите фамилию.";
+            $formIsCorrect = false;
+        } else {
+            if (strlen($result["lastName"]) < 6) {
+                $lastNameErr = "Фамилия должна быть не менее 6 символов.";
+                $formIsCorrect = false;
+            }
+        }
+
+        if (empty($result["birthday"])) {
+            $birthdayErr = "Введите дату.";
+            $formIsCorrect = false;
+        }
+
+        $errors = array(
+            "loginErr" => $loginErr,
+            "firstNameErr" => $firstNameErr,
+            "lastNameErr" => $lastNameErr,
+            "birthdayErr" => $birthdayErr
+        );
+
+        $result["correct"] = $formIsCorrect;
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && $result["correct"]) {
+            $updateUser = json_encode($_REQUEST, true);
+            $model->save($result, $_GET["id"]);
+        }else{
+            $this->view($userData, $errors);
+        }
     }
 
-    public function view($result)
+    public function view($result, $errors)
     {
         $view = new viewUser();
-        $view->ViewFormUser($this->result);
+        $view->ViewFormUser($result, $errors);
     }
+
+
 
     public function delete()
     {

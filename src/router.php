@@ -1,6 +1,6 @@
 <?php
 require_once 'class/singleton.php';
-require_once 'class/Controller.php';
+require_once 'class/AdminController.php';
 require_once 'class/UserController.php';
 require_once 'class/DocController.php';
 
@@ -35,8 +35,6 @@ class Router extends Singleton
     {
         //Выбор какой контроллер запустить и его запуск
         $path = $this->getPathUser();
-        $id = $_GET["id"];
-        $id = (int)$id;
         $routes = [
             "/users" => ["className"=>"userController", "method"=>"users"],
             "/users/create" => ["className"=>"userController", "method"=>"create"],
@@ -55,12 +53,11 @@ class Router extends Singleton
                 $controler = new $val["className"]();
                 $method = (string)$val["method"];
                 $controler->$method();
-                //require $val;
             }
         }
-        // if ($addresIsCorrect) {
-        //     require "404.php";
-        // }
+         if ($addresIsCorrect) {
+             require "404.php";
+         }
     }
 
     function getVar($name, $default = null)

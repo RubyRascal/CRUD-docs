@@ -20,11 +20,10 @@
             <th>Delete user</th>
         </tr>
         <?php
-        require 'func_users.php';
-        $resArr = getUsersArray();
-        foreach ($resArr as $arr) {
-            $outmsv = $arr["json"];
-            $id = $arr["id"];
+
+        foreach ($UserArr as $user) {
+            $outmsv = $user["json"];
+            $id = $user["id"];
             $id = (int)$id;
             if ($outmsv["active"] != "on") {
                 $outmsv["active"] = "off";

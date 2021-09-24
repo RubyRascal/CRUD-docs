@@ -20,9 +20,7 @@
             <th>Delete user</th>
         </tr>
         <?php
-        require 'func_users.php';
-        $resArr = getUsersArray();
-        foreach ($resArr as $arr) {
+        foreach ($UserArr as $arr) {
             $outmsv = $arr["json"];
             $id = $arr["id"];
             $id = (int)$id;

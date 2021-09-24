@@ -1,17 +1,9 @@
 <?php
-function createId($file)
-{
-    $len = strlen($file);
-    $fileName = substr($file, 0, $len - 5);
-    return $fileName;
-}
-
 function getUsersArray()
 {
-    $dir = __DIR__ .  '/data/users';
+    $dir = __DIR__ . '/data/users/';
     $files = array_diff(scandir($dir), ['..', '.']);
-    $id = 0;
-    $jsonArray = [];
+    $id = 1;
 
     $result = array();
 
@@ -23,6 +15,12 @@ function getUsersArray()
             "id" => $id, "json" => $outmsv
         );
     }
-
     return $result;
+}
+
+function createId($file)
+{
+    $len = strlen($file);
+    $fileName = substr($file, 0, $len - 5);
+    return $fileName;
 }
