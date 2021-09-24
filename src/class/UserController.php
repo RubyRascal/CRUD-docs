@@ -19,10 +19,6 @@ class UserController extends Controller
     {
         if(isset($_POST["submitCreate"])){
             $i = 1;
-//            $fileUsers = 'data/users/' . $i . '.json';
-//            while (is_file($fileUsers)) {
-//                $fileUsers = 'data/users/' . $i++ . '.json';
-//            }
             $model = new userModel();
             $this->result=$model->create();
             $model->save($i, $this->result);
@@ -39,7 +35,6 @@ class UserController extends Controller
         }
 
         $model = new userModel();
-//        $vadator = Validator::validate($_REQUEST);
         $this->result = $model->edit($_REQUEST);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -54,5 +49,11 @@ class UserController extends Controller
     {
         $view = new viewUser();
         $view->ViewFormUser($this->result);
+    }
+
+    public function delete()
+    {
+    $model = new userModel();
+    $model->delete();
     }
 }

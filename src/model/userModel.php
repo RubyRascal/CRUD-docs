@@ -16,8 +16,8 @@ class userModel
 
         if ($result["correct"]) {
             $json_string = json_encode($result);
-            var_dump($json_string);
             $check = file_put_contents($fileUsers, $json_string);
+            header('Location: /users');
         }
     }
 
@@ -73,18 +73,7 @@ class userModel
 
     public function create()
     {
-        //не работает сохранение
 
-
-
-
-//        if(isset($_POST["submitCreate"])){
-//            $i = 1;
-//            $fileUsers = 'data/users/' . $i . '.json';
-//            while (is_file($fileUsers)) {
-//                $fileUsers = 'data/users/' . $i++ . '.json';
-//            }
-//        }
         $userData = array(
             'login' => $_POST["login"],
             'firstName' => $_POST["firstName"],
@@ -130,13 +119,16 @@ class userModel
             $formIsCorrect = false;
         }
         $userData["correct"] = $formIsCorrect;
-//        if ($formIsCorrect) {
-//            $json_string = json_encode($userData);
-//            file_put_contents($fileUsers, $json_string);
-//            header('Location: /users');
-//            exit;
-//        }
+
         return $userData;
 
+    }
+
+    public function delete()
+    {
+        $dir = '/var/www/data/users/';
+        $file = $dir . $_GET["id"] . '.json';
+        unlink($file);
+        header('Location: /users');
     }
 }
