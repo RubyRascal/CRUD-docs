@@ -152,6 +152,8 @@ class UserController
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && $result["correct"]) {
             $updateUser = json_encode($_REQUEST, true);
             $model->save($result, $_GET["id"]);
+        }elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && $result["correct"] == false) {
+            $this->view($_REQUEST, $errors);
         }else{
             $this->view($userData, $errors);
         }
