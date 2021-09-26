@@ -80,8 +80,6 @@ class UserController
 
     public function edit()
     {
-        // при редактировании если какое то поле заполнено не верно,
-        // то возвращает не введенные пользователем значения, а значения из файла.
         if (isset($_GET["id"])) {
             $dir = '/var/www/data/users/';
             $fileUsers = $dir . $_GET["id"] . '.json';

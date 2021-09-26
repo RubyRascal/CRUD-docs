@@ -145,7 +145,7 @@ class DocController
         if ($formIsCorrect){
             $model->save($result, $_GET["id"]);
         }else{
-            $this->view($result, $errors);//возможно $this
+            $this->view($result, $errors);
         }
     }
 
