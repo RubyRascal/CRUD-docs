@@ -144,25 +144,25 @@ if ($formIsCorrect) {
     <h1><?php if (isset($_GET["id"])) {?>Edit<?php }else{ ?>Create<?php } ?> Document</h1>
     <form class="formCreate" method="POST" action="">
         <h3 class="form-text">Organization</h3>
-        <input class="input" type="organization" placeholder="organization" name="organization" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["organization"];}else{echo $DocArr["organization"];}?>"/><p class="error"><?php echo $organizationErr ?></p>
+        <input class="input" type="organization" placeholder="organization" name="organization" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["organization"];}else{echo $DocArr["organization"];}?>"/><p class="error"><?php echo $errors["organizationErr"] ?></p>
         <h3 class="form-text">Counterparty</h3>
-        <input class="input" type="agent" placeholder="agent" name="agent" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["agent"];}else{echo $DocArr["agent"];}?>"/><p class="error"><?php echo $agentErr ?></p>
+        <input class="input" type="agent" placeholder="agent" name="agent" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["agent"];}else{echo $DocArr["agent"];}?>"/><p class="error"><?php echo $errors["agentErr"]?></p>
         <h3 class="form-text">Signatory</h3>
-        <input class="input" type="podpisan" placeholder="podpisan" name="podpisan" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["podpisan"];}else{echo $DocArr["podpisan"];}?>"/><p class="error"><?php echo $podpisanErr ?></p>
+        <input class="input" type="podpisan" placeholder="podpisan" name="podpisan" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["podpisan"];}else{echo $DocArr["podpisan"];}?>"/><p class="error"><?php echo $errors["podpisanErr"] ?></p>
         <h3 class="form-text">Contract start date</h3>
-        <input class="input" type="date" name="date-start" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["date-start"];}else{echo $DocArr["date-start"];}?>"/><p class="error"><?php echo $dateStartErr ?></p>
+        <input class="input" type="date" name="date-start" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["date-start"];}else{echo $DocArr["date-start"];}?>"/><p class="error"><?php echo $errors["dateStartErr"] ?></p>
         <h3 class="form-text">Contract finish date</h3>
-        <input class="input" type="date" name="date-finish" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["date-finish"];}else{echo $DocArr["date-finish"];}?>"/><p class="error"><?php echo $dateFinishErr ?></p>
+        <input class="input" type="date" name="date-finish" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["date-finish"];}else{echo $DocArr["date-finish"];}?>"/><p class="error"><?php echo $errors["dateFinishErr"] ?></p>
         <h3 class="form-text">Subject of the contract</h3>
-        <p><select class="input" name="item" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["item"];}else{echo $DocArr["item"];}?>"><option>Покупка</option><option>Продажа</option></select></p><p class="error"><?php echo $itemErr ?></p>
+        <p><select class="input" name="item" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["item"];}else{echo $DocArr["item"];}?>"><option>Покупка</option><option>Продажа</option></select></p><p class="error"><?php echo $errors["itemErr"] ?></p>
         <h3 class="form-text">Contract amount</h3>
-        <input class="input" type="money" name="money" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["money"];}else{echo $DocArr["money"];}?>"/><p class="error"><?php echo $moneyErr ?></p>
+        <input class="input" type="money" name="money" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["money"];}else{echo $DocArr["money"];}?>"/><p class="error"><?php echo $errors["moneyErr"] ?></p>
         <h3 class="form-text">Requisites</h3>
-        <input class="input" type="ur-addres" placeholder="Legal address" name="ur-addres" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["ur-addres"];}else{echo $DocArr["ur-addres"];}?>"/><p class="error"><?php echo $urAddresErr ?></p>
+        <input class="input" type="ur-addres" placeholder="Legal address" name="ur-addres" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["ur-addres"];}else{echo $DocArr["ur-addres"];}?>"/><p class="error"><?php echo $errors["urAddresErr"] ?></p>
         <!-- <p>Юр. адрес совпадает с физ. адресом?</p><input type="checkbox"> -->
-        <input class="input" type="fiz-addres" placeholder="Physical address" name="fiz-addres" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["fiz-addres"];}else{echo $DocArr["fiz-addres"];}?>"/><p class="error"><?php echo $fizAddresErr ?></p>
-        <input class="input" type="INN" placeholder="ИНН" name="INN" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["INN"];}else{echo $DocArr["INN"];}?>"/><p class="error"><?php echo $innErr ?></p>
-        <input class="input" type="payment" placeholder="Payment account" name="payment" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["payment"];}else{echo $DocArr["payment"];}?>"/><p class="error"><?php echo $paymentErr ?></p>
+        <input class="input" type="fiz-addres" placeholder="Physical address" name="fiz-addres" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["fiz-addres"];}else{echo $DocArr["fiz-addres"];}?>"/><p class="error"><?php echo $errors["fizAddresErr"] ?></p>
+        <input class="input" type="INN" placeholder="ИНН" name="INN" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["INN"];}else{echo $DocArr["INN"];}?>"/><p class="error"><?php echo $errors["innErr"] ?></p>
+        <input class="input" type="payment" placeholder="Payment account" name="payment" value="<?php if (isset($_POST["submitCreateDoc"])) {echo $_POST["payment"];}else{echo $DocArr["payment"];}?>"/><p class="error"><?php echo $errors["paymentErr"] ?></p>
 </br>
         <input class="input" type="submit" <?php if (isset($_GET["id"])) {?> name="submitUpdateDoc"<?php }else{ ?> name="submitCreateDoc"<?php } ?> <?php if (isset($_GET["id"])) {?> value="Edit"<?php }else{ ?> value="Create"<?php } ?>/>
     </form>

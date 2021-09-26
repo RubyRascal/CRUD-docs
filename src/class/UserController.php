@@ -1,6 +1,5 @@
 <?php
 require_once 'model/userModel.php';
-require_once 'func_users.php';
 require_once 'view/viewListUser.php';
 require_once 'view/viewUser.php';
 class UserController
@@ -75,7 +74,7 @@ class UserController
         if ($formIsCorrect){
             $model->save($result, $_GET["id"]);
         }else{
-            $this->view($result, $errors);//возможно $this
+            $this->view($result, $errors);
         }
     }
 

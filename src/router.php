@@ -36,14 +36,14 @@ class Router extends Singleton
         //Выбор какой контроллер запустить и его запуск
         $path = $this->getPathUser();
         $routes = [
-            "/users" => ["className"=>"userController", "method"=>"users"],
-            "/users/create" => ["className"=>"userController", "method"=>"create"],
-            "/users/edit/" => ["className"=>"userController", "method"=>"edit"],
-            "/users/delete/" => ["className"=>"userController", "method"=>"delete"],
-            "/docs" => ["className"=>"docController", "method"=>"docs"],
-            "/docs/create" => ["className"=>"docController", "method"=>"create"],
-            "/docs/edit/" => ["className"=>"docController", "method"=>"edit"],
-            "/docs/delete/" => ["className"=>"docController", "method"=>"delete"],
+            "/users" => ["className"=>"UserController", "method"=>"users"],
+            "/users/create" => ["className"=>"UserController", "method"=>"create"],
+            "/users/edit/" => ["className"=>"UserController", "method"=>"edit"],
+            "/users/delete/" => ["className"=>"UserController", "method"=>"delete"],
+            "/docs" => ["className"=>"DocController", "method"=>"docs"],
+            "/docs/create" => ["className"=>"DocController", "method"=>"create"],
+            "/docs/edit/" => ["className"=>"DocController", "method"=>"edit"],
+            "/docs/delete/" => ["className"=>"DocController", "method"=>"delete"],
             "/AdminPanel" => ["className"=>"adminController", "method"=>"admin"]
         ];
         $addresIsCorrect = true;
