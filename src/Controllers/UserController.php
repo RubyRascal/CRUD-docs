@@ -26,6 +26,7 @@ class UserController
         if(isset($_POST["submitCreate"])){
             $model = new \Models\userModel();
             $result=$model->create($userData);
+            var_dump($result);
             $validate = UserValidator::validateForm($result);
         }
 

@@ -533,3 +533,351 @@
 2021/09/26 12:09:20 [notice] 1#1: start worker process 23
 2021/09/26 12:09:20 [notice] 1#1: start worker process 24
 2021/09/26 12:09:20 [notice] 1#1: start worker process 25
+2021/09/28 05:39:03 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:09 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:14 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:20 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:27 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:43 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:39:55 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:40:13 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:40:44 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:41:41 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:42:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:43:52 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:44:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:46:03 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:47:08 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:48:14 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:49:19 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:50:24 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:51:30 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:52:35 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:53:41 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:54:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:55:52 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:56:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:58:02 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 05:59:08 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:00:13 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:01:19 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:02:24 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:03:29 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:04:35 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:05:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:06:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:07:51 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:08:56 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/28 06:10:02 [notice] 1#1: using the "epoll" event method
+2021/09/28 06:10:02 [notice] 1#1: nginx/1.21.3
+2021/09/28 06:10:02 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 06:10:02 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 06:10:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 06:10:02 [notice] 1#1: start worker processes
+2021/09/28 06:10:02 [notice] 1#1: start worker process 22
+2021/09/28 06:10:02 [notice] 1#1: start worker process 23
+2021/09/28 06:10:02 [notice] 1#1: start worker process 24
+2021/09/28 06:10:02 [notice] 1#1: start worker process 25
+2021/09/28 06:17:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 06:17:13 [notice] 22#22: gracefully shutting down
+2021/09/28 06:17:13 [notice] 25#25: gracefully shutting down
+2021/09/28 06:17:13 [notice] 22#22: exiting
+2021/09/28 06:17:13 [notice] 25#25: exiting
+2021/09/28 06:17:13 [notice] 23#23: gracefully shutting down
+2021/09/28 06:17:13 [notice] 23#23: exiting
+2021/09/28 06:17:13 [notice] 22#22: exit
+2021/09/28 06:17:13 [notice] 25#25: exit
+2021/09/28 06:17:13 [notice] 23#23: exit
+2021/09/28 06:17:13 [notice] 24#24: gracefully shutting down
+2021/09/28 06:17:13 [notice] 24#24: exiting
+2021/09/28 06:17:13 [notice] 24#24: exit
+2021/09/28 06:17:13 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 06:17:13 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 06:17:13 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:17:13 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 06:17:13 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 06:17:13 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:17:13 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 06:17:13 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 06:17:13 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:17:13 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/28 06:17:13 [notice] 1#1: worker process 22 exited with code 0
+2021/09/28 06:17:13 [notice] 1#1: exit
+2021/09/28 06:20:26 [notice] 1#1: using the "epoll" event method
+2021/09/28 06:20:26 [notice] 1#1: nginx/1.21.3
+2021/09/28 06:20:26 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 06:20:26 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 06:20:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 06:20:26 [notice] 1#1: start worker processes
+2021/09/28 06:20:26 [notice] 1#1: start worker process 22
+2021/09/28 06:20:26 [notice] 1#1: start worker process 23
+2021/09/28 06:20:26 [notice] 1#1: start worker process 24
+2021/09/28 06:20:26 [notice] 1#1: start worker process 25
+2021/09/28 06:20:26 [error] 23#23: *2 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local"
+2021/09/28 06:20:26 [error] 23#23: *2 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/"
+2021/09/28 06:20:29 [error] 22#22: *6 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local"
+2021/09/28 06:20:29 [error] 22#22: *6 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/"
+2021/09/28 06:20:30 [error] 22#22: *6 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /users HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/"
+2021/09/28 06:20:30 [error] 22#22: *6 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/users"
+2021/09/28 06:21:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 06:21:02 [notice] 22#22: gracefully shutting down
+2021/09/28 06:21:02 [notice] 24#24: gracefully shutting down
+2021/09/28 06:21:02 [notice] 24#24: exiting
+2021/09/28 06:21:02 [notice] 22#22: exiting
+2021/09/28 06:21:02 [notice] 23#23: gracefully shutting down
+2021/09/28 06:21:02 [notice] 25#25: gracefully shutting down
+2021/09/28 06:21:02 [notice] 25#25: exiting
+2021/09/28 06:21:02 [notice] 24#24: exit
+2021/09/28 06:21:02 [notice] 22#22: exit
+2021/09/28 06:21:02 [notice] 25#25: exit
+2021/09/28 06:21:02 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/28 06:21:02 [notice] 1#1: worker process 22 exited with code 0
+2021/09/28 06:21:02 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:21:02 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 06:21:02 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 06:21:02 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:21:02 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 06:21:02 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 06:21:02 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:21:41 [notice] 1#1: using the "epoll" event method
+2021/09/28 06:21:41 [notice] 1#1: nginx/1.21.3
+2021/09/28 06:21:41 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 06:21:41 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 06:21:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 06:21:41 [notice] 1#1: start worker processes
+2021/09/28 06:21:41 [notice] 1#1: start worker process 23
+2021/09/28 06:21:41 [notice] 1#1: start worker process 24
+2021/09/28 06:21:41 [notice] 1#1: start worker process 25
+2021/09/28 06:21:41 [notice] 1#1: start worker process 26
+2021/09/28 06:21:44 [error] 23#23: *1 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /users HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/"
+2021/09/28 06:21:44 [error] 23#23: *1 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/www/html/xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: crud.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "crud.local", referrer: "http://crud.local/users"
+2021/09/28 06:23:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 06:23:45 [notice] 23#23: gracefully shutting down
+2021/09/28 06:23:45 [notice] 24#24: gracefully shutting down
+2021/09/28 06:23:45 [notice] 23#23: exiting
+2021/09/28 06:23:45 [notice] 24#24: exiting
+2021/09/28 06:23:45 [notice] 23#23: exit
+2021/09/28 06:23:45 [notice] 24#24: exit
+2021/09/28 06:23:45 [notice] 26#26: gracefully shutting down
+2021/09/28 06:23:45 [notice] 26#26: exiting
+2021/09/28 06:23:45 [notice] 25#25: gracefully shutting down
+2021/09/28 06:23:45 [notice] 25#25: exiting
+2021/09/28 06:23:45 [notice] 26#26: exit
+2021/09/28 06:23:45 [notice] 25#25: exit
+2021/09/28 06:23:45 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 06:23:45 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 06:23:45 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:23:45 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 06:23:45 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 06:23:45 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:23:45 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/09/28 06:23:45 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 06:23:45 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 06:23:45 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 06:23:45 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 06:23:45 [notice] 1#1: exit
+2021/09/28 06:29:57 [notice] 1#1: using the "epoll" event method
+2021/09/28 06:29:57 [notice] 1#1: nginx/1.21.3
+2021/09/28 06:29:57 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 06:29:57 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 06:29:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 06:29:57 [notice] 1#1: start worker processes
+2021/09/28 06:29:57 [notice] 1#1: start worker process 22
+2021/09/28 06:29:57 [notice] 1#1: start worker process 23
+2021/09/28 06:29:57 [notice] 1#1: start worker process 24
+2021/09/28 06:29:57 [notice] 1#1: start worker process 25
+2021/09/28 07:37:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 07:37:00 [notice] 23#23: gracefully shutting down
+2021/09/28 07:37:00 [notice] 22#22: gracefully shutting down
+2021/09/28 07:37:00 [notice] 24#24: gracefully shutting down
+2021/09/28 07:37:00 [notice] 23#23: exiting
+2021/09/28 07:37:00 [notice] 22#22: exiting
+2021/09/28 07:37:00 [notice] 24#24: exiting
+2021/09/28 07:37:00 [notice] 22#22: exit
+2021/09/28 07:37:00 [notice] 23#23: exit
+2021/09/28 07:37:00 [notice] 24#24: exit
+2021/09/28 07:37:00 [notice] 25#25: gracefully shutting down
+2021/09/28 07:37:00 [notice] 25#25: exiting
+2021/09/28 07:37:00 [notice] 25#25: exit
+2021/09/28 07:37:00 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 07:37:00 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 07:37:00 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:37:00 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 07:37:00 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 07:37:00 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 07:37:00 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:37:00 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2021/09/28 07:37:00 [notice] 1#1: worker process 22 exited with code 0
+2021/09/28 07:37:00 [notice] 1#1: exit
+2021/09/28 07:37:44 [notice] 1#1: using the "epoll" event method
+2021/09/28 07:37:44 [notice] 1#1: nginx/1.21.3
+2021/09/28 07:37:44 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 07:37:44 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 07:37:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 07:37:44 [notice] 1#1: start worker processes
+2021/09/28 07:37:44 [notice] 1#1: start worker process 23
+2021/09/28 07:37:44 [notice] 1#1: start worker process 24
+2021/09/28 07:37:44 [notice] 1#1: start worker process 25
+2021/09/28 07:37:44 [notice] 1#1: start worker process 26
+2021/09/28 07:40:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 07:40:42 [notice] 23#23: gracefully shutting down
+2021/09/28 07:40:42 [notice] 24#24: gracefully shutting down
+2021/09/28 07:40:42 [notice] 23#23: exiting
+2021/09/28 07:40:42 [notice] 24#24: exiting
+2021/09/28 07:40:42 [notice] 24#24: exit
+2021/09/28 07:40:42 [notice] 23#23: exit
+2021/09/28 07:40:42 [notice] 25#25: gracefully shutting down
+2021/09/28 07:40:42 [notice] 25#25: exiting
+2021/09/28 07:40:42 [notice] 25#25: exit
+2021/09/28 07:40:42 [notice] 26#26: gracefully shutting down
+2021/09/28 07:40:42 [notice] 26#26: exiting
+2021/09/28 07:40:42 [notice] 26#26: exit
+2021/09/28 07:40:42 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 07:40:42 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 07:40:42 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 07:40:42 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 07:40:42 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:40:42 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 07:40:42 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 07:40:42 [notice] 1#1: exit
+2021/09/28 07:40:45 [notice] 1#1: using the "epoll" event method
+2021/09/28 07:40:45 [notice] 1#1: nginx/1.21.3
+2021/09/28 07:40:45 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 07:40:45 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 07:40:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 07:40:45 [notice] 1#1: start worker processes
+2021/09/28 07:40:45 [notice] 1#1: start worker process 22
+2021/09/28 07:40:45 [notice] 1#1: start worker process 23
+2021/09/28 07:40:45 [notice] 1#1: start worker process 24
+2021/09/28 07:40:45 [notice] 1#1: start worker process 25
+2021/09/28 07:50:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 07:50:03 [notice] 22#22: gracefully shutting down
+2021/09/28 07:50:03 [notice] 23#23: gracefully shutting down
+2021/09/28 07:50:03 [notice] 24#24: gracefully shutting down
+2021/09/28 07:50:03 [notice] 25#25: gracefully shutting down
+2021/09/28 07:50:03 [notice] 23#23: exiting
+2021/09/28 07:50:03 [notice] 24#24: exiting
+2021/09/28 07:50:03 [notice] 25#25: exiting
+2021/09/28 07:50:03 [notice] 22#22: exiting
+2021/09/28 07:50:03 [notice] 24#24: exit
+2021/09/28 07:50:03 [notice] 25#25: exit
+2021/09/28 07:50:03 [notice] 23#23: exit
+2021/09/28 07:50:03 [notice] 22#22: exit
+2021/09/28 07:50:03 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 07:50:03 [notice] 1#1: worker process 22 exited with code 0
+2021/09/28 07:50:03 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 07:50:03 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:50:03 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 07:50:03 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 07:50:03 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 07:50:03 [notice] 1#1: exit
+2021/09/28 07:50:07 [notice] 1#1: using the "epoll" event method
+2021/09/28 07:50:07 [notice] 1#1: nginx/1.21.3
+2021/09/28 07:50:07 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 07:50:07 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 07:50:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 07:50:07 [notice] 1#1: start worker processes
+2021/09/28 07:50:07 [notice] 1#1: start worker process 23
+2021/09/28 07:50:07 [notice] 1#1: start worker process 24
+2021/09/28 07:50:07 [notice] 1#1: start worker process 25
+2021/09/28 07:50:07 [notice] 1#1: start worker process 26
+2021/09/28 07:50:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 07:50:08 [notice] 25#25: gracefully shutting down
+2021/09/28 07:50:08 [notice] 23#23: gracefully shutting down
+2021/09/28 07:50:08 [notice] 26#26: gracefully shutting down
+2021/09/28 07:50:08 [notice] 25#25: exiting
+2021/09/28 07:50:08 [notice] 23#23: exiting
+2021/09/28 07:50:08 [notice] 26#26: exiting
+2021/09/28 07:50:08 [notice] 25#25: exit
+2021/09/28 07:50:08 [notice] 23#23: exit
+2021/09/28 07:50:08 [notice] 26#26: exit
+2021/09/28 07:50:08 [notice] 24#24: gracefully shutting down
+2021/09/28 07:50:08 [notice] 24#24: exiting
+2021/09/28 07:50:08 [notice] 24#24: exit
+2021/09/28 07:50:09 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 07:50:09 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 07:50:09 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:50:09 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/09/28 07:50:09 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 07:50:09 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 07:50:09 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 07:50:09 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 07:50:09 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 07:50:09 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 07:50:09 [notice] 1#1: exit
+2021/09/28 07:50:17 [notice] 1#1: using the "epoll" event method
+2021/09/28 07:50:17 [notice] 1#1: nginx/1.21.3
+2021/09/28 07:50:17 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 07:50:17 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 07:50:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 07:50:17 [notice] 1#1: start worker processes
+2021/09/28 07:50:17 [notice] 1#1: start worker process 25
+2021/09/28 07:50:17 [notice] 1#1: start worker process 26
+2021/09/28 07:50:17 [notice] 1#1: start worker process 27
+2021/09/28 07:50:17 [notice] 1#1: start worker process 28
+2021/09/28 08:15:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 08:15:21 [notice] 27#27: gracefully shutting down
+2021/09/28 08:15:21 [notice] 28#28: gracefully shutting down
+2021/09/28 08:15:21 [notice] 25#25: gracefully shutting down
+2021/09/28 08:15:21 [notice] 27#27: exiting
+2021/09/28 08:15:21 [notice] 28#28: exiting
+2021/09/28 08:15:21 [notice] 25#25: exiting
+2021/09/28 08:15:21 [notice] 28#28: exit
+2021/09/28 08:15:21 [notice] 27#27: exit
+2021/09/28 08:15:21 [notice] 25#25: exit
+2021/09/28 08:15:21 [notice] 26#26: gracefully shutting down
+2021/09/28 08:15:21 [notice] 26#26: exiting
+2021/09/28 08:15:21 [notice] 26#26: exit
+2021/09/28 08:15:21 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2021/09/28 08:15:21 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 08:15:21 [notice] 1#1: worker process 27 exited with code 0
+2021/09/28 08:15:21 [notice] 1#1: worker process 28 exited with code 0
+2021/09/28 08:15:21 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 08:15:21 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/09/28 08:15:21 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 08:15:21 [notice] 1#1: exit
+2021/09/28 08:15:32 [notice] 1#1: using the "epoll" event method
+2021/09/28 08:15:32 [notice] 1#1: nginx/1.21.3
+2021/09/28 08:15:32 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 08:15:32 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 08:15:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 08:15:32 [notice] 1#1: start worker processes
+2021/09/28 08:15:32 [notice] 1#1: start worker process 23
+2021/09/28 08:15:32 [notice] 1#1: start worker process 24
+2021/09/28 08:15:32 [notice] 1#1: start worker process 25
+2021/09/28 08:15:32 [notice] 1#1: start worker process 26
+2021/09/28 09:21:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 09:21:38 [notice] 23#23: gracefully shutting down
+2021/09/28 09:21:38 [notice] 23#23: exiting
+2021/09/28 09:21:38 [notice] 23#23: exit
+2021/09/28 09:21:38 [notice] 24#24: gracefully shutting down
+2021/09/28 09:21:38 [notice] 24#24: exiting
+2021/09/28 09:21:38 [notice] 24#24: exit
+2021/09/28 09:21:38 [notice] 25#25: gracefully shutting down
+2021/09/28 09:21:38 [notice] 25#25: exiting
+2021/09/28 09:21:38 [notice] 26#26: gracefully shutting down
+2021/09/28 09:21:38 [notice] 25#25: exit
+2021/09/28 09:21:38 [notice] 26#26: exiting
+2021/09/28 09:21:38 [notice] 26#26: exit
+2021/09/28 09:21:38 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 09:21:38 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 09:21:38 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 09:21:38 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 09:21:38 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 09:21:38 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 09:21:38 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 09:21:38 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 09:21:38 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 09:21:38 [notice] 1#1: exit
+2021/09/28 09:23:39 [notice] 1#1: using the "epoll" event method
+2021/09/28 09:23:39 [notice] 1#1: nginx/1.21.3
+2021/09/28 09:23:39 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/28 09:23:39 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/28 09:23:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/28 09:23:39 [notice] 1#1: start worker processes
+2021/09/28 09:23:39 [notice] 1#1: start worker process 23
+2021/09/28 09:23:39 [notice] 1#1: start worker process 24
+2021/09/28 09:23:39 [notice] 1#1: start worker process 25
+2021/09/28 09:23:39 [notice] 1#1: start worker process 26
+2021/09/28 11:50:59 [error] 24#24: *26 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: crud.local, request: "GET /DbAdapter.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "crud.local"

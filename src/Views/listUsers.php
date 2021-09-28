@@ -21,8 +21,8 @@
         </tr>
         <?php
         foreach ($UserArr as $arr) {
-            $outmsv = $arr["json"];
-            $id = $arr["id"];
+            $outmsv = $arr;
+            $id = $arr["user_id"];
             $id = (int)$id;
             if ($outmsv["active"] != "on") {
                 $outmsv["active"] = "off";

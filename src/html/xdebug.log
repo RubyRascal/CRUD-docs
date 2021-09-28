@@ -1,0 +1,324 @@
+[7] Log opened at 2021-09-28 06:22:31
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:22:31
+
+[8] Log opened at 2021-09-28 06:22:31
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:22:31
+
+[1] Log opened at 2021-09-28 06:27:48
+[1] I: Connecting to configured address/port: host.docker.internal:9001.
+[1] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[1] E: Could not connect to client. :-(
+[1] Log closed at 2021-09-28 06:27:48
+
+[7] Log opened at 2021-09-28 06:29:58
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:29:58
+
+[8] Log opened at 2021-09-28 06:30:09
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:30:09
+
+[7] Log opened at 2021-09-28 06:32:31
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:32:31
+
+[8] Log opened at 2021-09-28 06:32:31
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:32:31
+
+[7] Log opened at 2021-09-28 06:32:33
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:32:33
+
+[8] Log opened at 2021-09-28 06:32:33
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:32:33
+
+[7] Log opened at 2021-09-28 06:32:35
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:32:35
+
+[8] Log opened at 2021-09-28 06:32:35
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:32:35
+
+[7] Log opened at 2021-09-28 06:33:08
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:08
+
+[8] Log opened at 2021-09-28 06:33:09
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Invalid argument.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:09
+
+[7] Log opened at 2021-09-28 06:33:10
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:10
+
+[8] Log opened at 2021-09-28 06:33:10
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:10
+
+[7] Log opened at 2021-09-28 06:33:12
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:12
+
+[8] Log opened at 2021-09-28 06:33:12
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:12
+
+[7] Log opened at 2021-09-28 06:33:47
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:47
+
+[8] Log opened at 2021-09-28 06:33:47
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:47
+
+[7] Log opened at 2021-09-28 06:33:48
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:48
+
+[8] Log opened at 2021-09-28 06:33:48
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:48
+
+[7] Log opened at 2021-09-28 06:33:49
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:33:49
+
+[8] Log opened at 2021-09-28 06:33:49
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:33:49
+
+[7] Log opened at 2021-09-28 06:34:02
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:34:02
+
+[8] Log opened at 2021-09-28 06:34:03
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:34:03
+
+[7] Log opened at 2021-09-28 06:34:03
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:34:03
+
+[8] Log opened at 2021-09-28 06:34:52
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:34:52
+
+[7] Log opened at 2021-09-28 06:34:52
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:34:52
+
+[8] Log opened at 2021-09-28 06:35:00
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:35:00
+
+[7] Log opened at 2021-09-28 06:35:00
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:35:00
+
+[8] Log opened at 2021-09-28 06:35:03
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:35:03
+
+[7] Log opened at 2021-09-28 06:57:29
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:57:29
+
+[8] Log opened at 2021-09-28 06:57:29
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:57:29
+
+[7] Log opened at 2021-09-28 06:57:38
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:57:38
+
+[8] Log opened at 2021-09-28 06:57:38
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:57:38
+
+[7] Log opened at 2021-09-28 06:57:45
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:57:45
+
+[8] Log opened at 2021-09-28 06:57:45
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:57:45
+
+[7] Log opened at 2021-09-28 06:57:55
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:57:55
+
+[8] Log opened at 2021-09-28 06:57:55
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:57:55
+
+[7] Log opened at 2021-09-28 06:57:56
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:57:56
+
+[8] Log opened at 2021-09-28 06:57:56
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:57:56
+
+[7] Log opened at 2021-09-28 06:58:14
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:14
+
+[8] Log opened at 2021-09-28 06:58:14
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:58:14
+
+[7] Log opened at 2021-09-28 06:58:17
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:17
+
+[8] Log opened at 2021-09-28 06:58:17
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:58:17
+
+[7] Log opened at 2021-09-28 06:58:31
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:31
+
+[8] Log opened at 2021-09-28 06:58:31
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:58:31
+
+[7] Log opened at 2021-09-28 06:58:31
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:31
+
+[8] Log opened at 2021-09-28 06:58:46
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:58:46
+
+[7] Log opened at 2021-09-28 06:58:47
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:47
+
+[8] Log opened at 2021-09-28 06:58:48
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 06:58:48
+
+[7] Log opened at 2021-09-28 06:58:48
+[7] I: Connecting to configured address/port: host.docker.internal:9001.
+[7] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[7] E: Could not connect to client. :-(
+[7] Log closed at 2021-09-28 06:58:48
+
+[9] Log opened at 2021-09-28 07:49:01
+[9] I: Connecting to configured address/port: host.docker.internal:9001.
+[9] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[9] E: Could not connect to client. :-(
+[9] Log closed at 2021-09-28 07:49:01
+
+[8] Log opened at 2021-09-28 07:49:02
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2021-09-28 07:49:02
+

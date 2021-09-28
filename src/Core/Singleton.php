@@ -1,20 +1,21 @@
 <?php
 namespace Core;
-class Singleton
+abstract class Singleton
 {
-    private static $instance = null;
-
-    public static function getInstance(): Singleton
+    protected function __construct()
     {
-        if (static::$instance === null) {
-            static::$instance = new static();
+    }
+
+    final public static function getInstance()
+    {
+        static $instances = array();
+        $calledClass = get_called_class();
+        if (!isset($instances[$calledClass])) {
+            $instances[$calledClass] = new $calledClass();
         }
-
-        return static::$instance;
+        return $instances[$calledClass];
     }
-
-    private function __construct()
+    final private function __clone()
     {
     }
-
 }
