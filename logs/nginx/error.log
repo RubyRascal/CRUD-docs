@@ -881,3 +881,54 @@
 2021/09/28 09:23:39 [notice] 1#1: start worker process 25
 2021/09/28 09:23:39 [notice] 1#1: start worker process 26
 2021/09/28 11:50:59 [error] 24#24: *26 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: crud.local, request: "GET /DbAdapter.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "crud.local"
+2021/09/28 14:49:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/09/28 14:49:41 [notice] 24#24: gracefully shutting down
+2021/09/28 14:49:41 [notice] 25#25: gracefully shutting down
+2021/09/28 14:49:41 [notice] 24#24: exiting
+2021/09/28 14:49:41 [notice] 25#25: exiting
+2021/09/28 14:49:41 [notice] 24#24: exit
+2021/09/28 14:49:41 [notice] 25#25: exit
+2021/09/28 14:49:41 [notice] 23#23: gracefully shutting down
+2021/09/28 14:49:41 [notice] 23#23: exiting
+2021/09/28 14:49:41 [notice] 23#23: exit
+2021/09/28 14:49:41 [notice] 26#26: gracefully shutting down
+2021/09/28 14:49:41 [notice] 26#26: exiting
+2021/09/28 14:49:41 [notice] 26#26: exit
+2021/09/28 14:49:41 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/09/28 14:49:41 [notice] 1#1: worker process 24 exited with code 0
+2021/09/28 14:49:41 [notice] 1#1: worker process 26 exited with code 0
+2021/09/28 14:49:41 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 14:49:41 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/09/28 14:49:41 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2021/09/28 14:49:41 [notice] 1#1: worker process 23 exited with code 0
+2021/09/28 14:49:41 [notice] 1#1: signal 29 (SIGIO) received
+2021/09/28 14:49:41 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/09/28 14:49:41 [notice] 1#1: worker process 25 exited with code 0
+2021/09/28 14:49:41 [notice] 1#1: exit
+2021/09/29 05:40:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:40:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:40:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:40:51 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:40:59 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:41:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:41:15 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:41:26 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:41:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:42:16 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:43:12 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:44:18 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:45:23 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:46:29 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:47:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:48:40 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:49:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/crud.conf:15
+2021/09/29 05:50:50 [notice] 1#1: using the "epoll" event method
+2021/09/29 05:50:50 [notice] 1#1: nginx/1.21.3
+2021/09/29 05:50:50 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/09/29 05:50:50 [notice] 1#1: OS: Linux 5.11.0-36-generic
+2021/09/29 05:50:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/09/29 05:50:50 [notice] 1#1: start worker processes
+2021/09/29 05:50:50 [notice] 1#1: start worker process 22
+2021/09/29 05:50:50 [notice] 1#1: start worker process 23
+2021/09/29 05:50:50 [notice] 1#1: start worker process 24
+2021/09/29 05:50:50 [notice] 1#1: start worker process 25

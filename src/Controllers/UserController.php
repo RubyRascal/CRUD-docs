@@ -1,11 +1,15 @@
 <?php
 namespace Controllers;
+use Models\DbAdapter;
 use Models\userModel;
 use Views\viewListUser;
 use Views\viewUser;
 use Validators\UserValidator;
 class UserController
 {
+    public $connect;
+    public $insert;
+    public $sth;
     public function users()
     {
         $model = new \Models\userModel();
@@ -25,14 +29,12 @@ class UserController
 
         if(isset($_POST["submitCreate"])){
             $model = new \Models\userModel();
-            $result=$model->create($userData);
-            var_dump($result);
-            $validate = UserValidator::validateForm($result);
+            $validate = UserValidator::validateForm($userData);
+            $model->create($validate["result"]);
         }
 
         if ($validate["result"]["correct"]){
-            $model->save($validate);
-            header('Location: /users');
+          header('Location: /users');
         }else{
             $this->view($validate["result"], $validate["errors"]);
         }
@@ -41,26 +43,32 @@ class UserController
     public function edit()
     {
         $model = new \Models\userModel();
-        $result = $model->edit();
+        $query = "SELECT * FROM myapp.users WHERE user_id={$_GET["id"]}";
+        $db = DBAdapter::getInstance();
+        $conn = $db->getConnect();
+        $resultExec = $db->execSQL($query);
 
-        $userData = array(
-            'login' => $result["FromFile"]["login"],
-            'firstName' => $result["FromFile"]["firstName"],
-            'lastName' => $result["FromFile"]["lastName"],
-            'birthday' => $result["FromFile"]["birthday"],
-            'active' => $result["FromFile"]["active"]
-        );
+        while ($row = mysqli_fetch_assoc($resultExec)){
+            $data = $row;
+        }
+        if (count($_POST) ==0){
+            $userData = array(
+                'login' => $data["login"],
+                'firstName' => $data["firstName"],
+                'lastName' => $data["lastName"],
+                'birthday' => $data["birthday"],
+                'active' => $data["active"]
+            );
+            $this->view($userData, $validate["errors"]);
+        }
+        $result = $model->edit($_GET["id"], $_POST);
 
-        $validate = UserValidator::validateForm($result["ToEdit"]);
+        $validate = UserValidator::validateForm($result);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"]) {
-            $updateUser = json_encode($result["ToEdit"], true);
-            $model->save($validate, $_GET["id"]);
             header('Location: /users');
         }elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"] == false) {
-            $this->view($result["ToEdit"], $validate["errors"]);
-        }else{
-            $this->view($userData, $validate["errors"]);
+            $this->view($validate["result"], $validate["errors"]);
         }
     }
 
@@ -73,7 +81,7 @@ class UserController
     public function delete()
     {
     $model = new \Models\userModel();
-    $model->delete();
+    $model->delete($_GET["id"]);
     header('Location: /users');
     }
 }

@@ -29,7 +29,7 @@ class DocController
             'payment' => $_POST["payment"]
         );
 
-        if(isset($_POST["submitCreateDoc"])) {
+        if(isset($_POST["submitCreate"])) {
             $model = new \Models\docModel();
             $result = $model->create($DocsData);
             $validate = DocValidator::validateForm($result);

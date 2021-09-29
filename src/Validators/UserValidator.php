@@ -42,6 +42,10 @@ class UserValidator
             $formIsCorrect = false;
         }
 
+        if ($result["active"] == null) {
+            $result["active"] = "off";
+        }
+
         $result["correct"] = $formIsCorrect;
 
         $Data = array(

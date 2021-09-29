@@ -3,42 +3,36 @@
 namespace Models;
 
 use Core\Singleton;
-use PDO;
-use PDOException;
-
+use mysqli;
 class DbAdapter extends Singleton
 {
-    public $conn;
-    public $servername;
-    public $username;
-    public $password;
-//    public $schema;
+    public $mysqli_connect = null;
+    public $servername = "db";
+    public $username = "root";
+    public $password = "root";
+    public $database = "myapp";
+    public $instance;
+
     public function __construct()
     {
-//        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-//        $mysqli = new mysqli("db", "root", "root", "myapp");
-        try{
-            $this->servername = "db";
-            $this->username = "root";
-            $this->password = "root";
-//        $this->schema ="myapp";
+        $this->mysqli_connect = mysqli_connect($this->servername, $this->username, $this->password, $this->database);
 
-            $this->conn = new PDO('mysql:host=db;dbname=myapp', $this->username, $this->password);
-        }catch (PDOException $e){
-            print "Error!:" . $e->getMessage() . "<br/>";
+        if (mysqli_connect_errno()) {
+            printf("Connect failed: %s\n", mysqli_connect_error());
+            exit();
         }
-
     }
 
     public function getConnect()
     {
-        return $this->conn;
+        return $this->mysqli_connect;
     }
 
-//    public function execSQL(string $sql)
-//    {
-//        $instance = self::getInstance();
-//        $result = mysqli_query($instance->getConnect(), $sql);
-//        return $result;
-//    }
+    public function execSQL(string $sql)
+    {
+        $this->instance = DbAdapter::getInstance();
+        $connect = $this->instance->getConnect();
+        $result = mysqli_query($connect ,$sql);
+        return $result;
+    }
 }
