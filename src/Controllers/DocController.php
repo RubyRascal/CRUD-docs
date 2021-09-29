@@ -1,5 +1,6 @@
 <?php
 namespace Controllers;
+use Models\DbAdapter;
 use Models\docModel;
 use Views\viewListDocs;
 use Views\viewDoc;
@@ -23,20 +24,19 @@ class DocController
             'date-finish' => $_POST["date-finish"],
             'item' => $_POST["item"],
             'money' => $_POST["money"],
-            'ur-addres' => $_POST["ur-addres"],
-            'fiz-addres' => $_POST["fiz-addres"],
+            'urAddress' => $_POST["urAddress"],
+            'fizAddress' => $_POST["fizAddress"],
             'INN' => $_POST["INN"],
             'payment' => $_POST["payment"]
         );
 
         if(isset($_POST["submitCreate"])) {
             $model = new \Models\docModel();
-            $result = $model->create($DocsData);
-            $validate = DocValidator::validateForm($result);
+            $validate = DocValidator::validateForm($DocsData);
+            $model->create($validate["result"]);
         }
 
         if ($validate["result"]["correct"]){
-            $model->save($validate);
             header('Location: /docs');
         }else{
             $this->view($validate["result"], $validate["errors"]);
@@ -46,31 +46,39 @@ class DocController
     public function edit()
     {
         $model = new \Models\docModel();
-        $result = $model->edit();
-        $DocsData = array(
-            'organization' => $result["FromFile"]["organization"],
-            'agent' => $result["FromFile"]["agent"],
-            'podpisan' => $result["FromFile"]["podpisan"],
-            'date-start' => $result["FromFile"]["date-start"],
-            'date-finish' => $result["FromFile"]["date-finish"],
-            'item' => $result["FromFile"]["item"],
-            'money' => $result["FromFile"]["money"],
-            'ur-addres' => $result["FromFile"]["ur-addres"],
-            'fiz-addres' => $result["FromFile"]["fiz-addres"],
-            'INN' => $result["FromFile"]["INN"],
-            'payment' => $result["FromFile"]["payment"]
-        );
+        $query = "SELECT * FROM myapp.docs WHERE user_id ={$_GET["id"]}";
+        $db = DbAdapter::getInstance();
+        $conn = $db->getConnect();
+        $resultExec = $db->execSQL($query);
+
+        while ($row = mysqli_fetch_assoc($resultExec)){
+            $data = $row;
+        }
+
+        if (count($_POST)>0){
+            $DocsData = array(
+                'organization' => $data["organization"],
+                'agent' => $data["agent"],
+                'podpisan' => $data["podpisan"],
+                'date-start' => $data["date-start"],
+                'date-finish' => $data["date-finish"],
+                'item' => $data["item"],
+                'money' => $data["money"],
+                'ur-addres' => $data["ur-addres"],
+                'fiz-addres' => $data["fiz-addres"],
+                'INN' => $data["INN"],
+                'payment' => $data["payment"]
+            );
+            $this->view($DocsData, $validate["errors"]);
+        }
+        $result = $model->edit($_GET["id"], $_POST);
 
         $validate = DocValidator::validateForm($result["ToEdit"]);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"]) {
-            $updateDoc = json_encode($result["ToEdit"], true);
-            $model->save($validate, $_GET["id"]);
             header('Location: /docs');
         }elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"] == false) {
-            $this->view($result["ToEdit"], $validate["errors"]);
-        }else{
-            $this->view($DocsData, $validate["errors"]);
+            $this->view($validate["result"], $validate["errors"]);
         }
     }
 
@@ -82,7 +90,7 @@ class DocController
 
     public function delete(){
         $model = new \Models\docModel();
-        $model->delete();
+        $model->delete($_GET["id"]);
         header('Location: /docs');
     }
 }

@@ -1,3 +1,6 @@
+<?php
+var_dump($DocArr);
+?>
 <!DOCTYPE html>
 
 <head>
@@ -24,10 +27,10 @@
         </tr>
         <?php
         foreach ($DocArr as $arr) {
-            $outmsv = $arr["json"];
+            $outmsv = $arr;
             $id = $arr["id"];
             $id = (int)$id;
-            $result = $outmsv["date-finish"] - $outmsv["date-start"];
+            $result = $outmsv["dateFinish"] - $outmsv["dateStart"];
         ?>
             <tr>
                 <td><?php echo $outmsv["organization"] ?></td>

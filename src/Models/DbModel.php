@@ -20,7 +20,8 @@ class DbModel
 
     public function create($data)
     {
-
+    var_dump($data);
+    die();
         unset($data["correct"]);
         $columns_part = '';
         $values_part = '';
@@ -42,7 +43,8 @@ class DbModel
         $values_part = "(" . $values_part  . ")";
 
         $query = "INSERT INTO $this->table $columns_part VALUES $values_part";
-
+        var_dump($query);
+        die();
         $db = DbAdapter::getInstance();
         $conn = $db->getConnect();
         $result = $db->execSQL($query);

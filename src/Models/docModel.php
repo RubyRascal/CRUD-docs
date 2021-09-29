@@ -1,6 +1,7 @@
 <?php
 namespace Models;
-class docModel extends Model
+use Models\DbModel;
+class docModel extends DbModel
 {
     public $table = "myapp.docs";
 //    public function __construct() {

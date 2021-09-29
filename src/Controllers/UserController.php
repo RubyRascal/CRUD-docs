@@ -7,9 +7,9 @@ use Views\viewUser;
 use Validators\UserValidator;
 class UserController
 {
-    public $connect;
-    public $insert;
-    public $sth;
+//    public $connect;
+//    public $insert;
+//    public $sth;
     public function users()
     {
         $model = new \Models\userModel();
