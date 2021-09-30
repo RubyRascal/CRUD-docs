@@ -2,6 +2,8 @@
 
 namespace Models;
 
+use Controllers\DocController;
+use Controllers\UserController;
 use Models\DbAdapter;
 
 class DbModel
@@ -20,8 +22,6 @@ class DbModel
 
     public function create($data)
     {
-    var_dump($data);
-    die();
         unset($data["correct"]);
         $columns_part = '';
         $values_part = '';
@@ -43,8 +43,6 @@ class DbModel
         $values_part = "(" . $values_part  . ")";
 
         $query = "INSERT INTO $this->table $columns_part VALUES $values_part";
-        var_dump($query);
-        die();
         $db = DbAdapter::getInstance();
         $conn = $db->getConnect();
         $result = $db->execSQL($query);
@@ -63,26 +61,33 @@ class DbModel
 
         $query = "UPDATE $this->table SET {$queryValue} WHERE user_id={$idFromTable}";
 
-        //$query .= "WHERE user_id={$idFromTable}";
-
-
-//        $query = "UPDATE myapp.users SET ";
-//        foreach ($data as $key=>$val)
-//        {
-//            $query .= "$key='$val', ";
-//        }
-//        $query .= "WHERE user_id={$idFromTable}";
-
         $db = DBAdapter::getInstance();
         $conn = $db->getConnect();
         $result = $db->execSQL($query);
-        $editData = array(
-            'login' => $data['login'],
-            'firstName' => $data['firstName'],
-            'lastName' => $data['lastName'],
-            'birthday' => $data['birthday'],
-            'active' => $data['active']
-        );
+
+        if (DocController::class){
+            $editData = array(
+                'organization' => $data['organization'],
+                'agent' => $data['agent'],
+                'podpisan' => $data['podpisan'],
+                'dateStart' => $data['dateStart'],
+                'dateFinish' => $data['dateFinish'],
+                'item' => $data['item'],
+                'money' => $data['money'],
+                'urAddress' => $data['urAddress'],
+                'fizAddress' => $data['fizAddress'],
+                'INN' => $data['INN'],
+                'payment' => $data['payment']
+            );
+        }else{
+            $editData = array(
+                'login' => $data['login'],
+                'firstName' => $data['firstName'],
+                'lastName' => $data['lastName'],
+                'birthday' => $data['birthday'],
+                'active' => $data['active']
+            );
+        }
         return $editData;
     }
 

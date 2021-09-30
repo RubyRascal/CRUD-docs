@@ -38,12 +38,12 @@ class DocValidator
             }
         }
 
-        if (empty($result["date-start"])) {
+        if (empty($result["dateStart"])) {
             $errors["dateStartErr"] = "Введите дату начала.";
             $formIsCorrect = false;
         }
 
-        if (empty($result["date-finish"])) {
+        if (empty($result["dateFinish"])) {
             $errors["dateFinishErr"] = "Введите дату окончания.";
             $formIsCorrect = false;
         }
@@ -63,21 +63,21 @@ class DocValidator
             }
         }
 
-        if (empty($result["ur-addres"])) {
+        if (empty($result["urAddress"])) {
             $errors["urAddresErr"] = "Введите юридический адрес.";
             $formIsCorrect = false;
         } else {
-            if (strlen($result["ur-addres"]) < 20) {
+            if (strlen($result["urAddress"]) < 20) {
                 $errors["urAddresErr"] = "Юридический адресс должен быть не менее 20 символов.";
                 $formIsCorrect = false;
             }
         }
 
-        if (empty($result["fiz-addres"])) {
+        if (empty($result["fizAddress"])) {
             $errors["fizAddresErr"] = "Введите физический адрес.";
             $formIsCorrect = false;
         } else {
-            if (strlen($result["fiz-addres"]) < 20) {
+            if (strlen($result["fizAddress"]) < 20) {
                 $errors["fizAddresErr"] = "Физический адрес должен быть не менее 20 символов.";
                 $formIsCorrect = false;
             }

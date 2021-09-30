@@ -20,8 +20,8 @@ class DocController
             'organization' => $_POST["organization"],
             'agent' => $_POST["agent"],
             'podpisan' => $_POST["podpisan"],
-            'date-start' => $_POST["date-start"],
-            'date-finish' => $_POST["date-finish"],
+            'dateStart' => $_POST["dateStart"],
+            'dateFinish' => $_POST["dateFinish"],
             'item' => $_POST["item"],
             'money' => $_POST["money"],
             'urAddress' => $_POST["urAddress"],
@@ -39,6 +39,7 @@ class DocController
         if ($validate["result"]["correct"]){
             header('Location: /docs');
         }else{
+            var_dump($validate["errors"]);
             $this->view($validate["result"], $validate["errors"]);
         }
     }
@@ -54,26 +55,24 @@ class DocController
         while ($row = mysqli_fetch_assoc($resultExec)){
             $data = $row;
         }
-
-        if (count($_POST)>0){
+        if (count($_POST)==0){
             $DocsData = array(
                 'organization' => $data["organization"],
                 'agent' => $data["agent"],
                 'podpisan' => $data["podpisan"],
-                'date-start' => $data["date-start"],
-                'date-finish' => $data["date-finish"],
+                'dateStart' => $data["dateStart"],
+                'dateFinish' => $data["dateFinish"],
                 'item' => $data["item"],
                 'money' => $data["money"],
-                'ur-addres' => $data["ur-addres"],
-                'fiz-addres' => $data["fiz-addres"],
+                'urAddress' => $data["urAddress"],
+                'fizAddress' => $data["fizAddress"],
                 'INN' => $data["INN"],
                 'payment' => $data["payment"]
             );
             $this->view($DocsData, $validate["errors"]);
         }
         $result = $model->edit($_GET["id"], $_POST);
-
-        $validate = DocValidator::validateForm($result["ToEdit"]);
+        $validate = DocValidator::validateForm($result);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"]) {
             header('Location: /docs');

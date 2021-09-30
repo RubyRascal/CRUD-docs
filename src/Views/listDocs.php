@@ -1,6 +1,3 @@
-<?php
-var_dump($DocArr);
-?>
 <!DOCTYPE html>
 
 <head>
@@ -28,7 +25,7 @@ var_dump($DocArr);
         <?php
         foreach ($DocArr as $arr) {
             $outmsv = $arr;
-            $id = $arr["id"];
+            $id = $arr["user_id"];
             $id = (int)$id;
             $result = $outmsv["dateFinish"] - $outmsv["dateStart"];
         ?>
