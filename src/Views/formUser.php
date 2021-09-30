@@ -8,11 +8,11 @@
     <h1><?php if (isset($_GET["id"])){ ?>Edit User<?php }else{ ?>Create New User<?php } ?></h1>
     <form class="formCreate" method="POST" action="">
         <h3 class="form-text">Login</h3>
-        <input class="input" type="login" placeholder="login" name="login" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["login"];}else{echo $userData["login"];}  ?>" /><p class="error"><?php echo $errors["loginErr"] ?></p>
+        <input class="input" type="text" placeholder="login" name="login" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["login"];}else{echo $userData["login"];}  ?>" /><p class="error"><?php echo $errors["loginErr"] ?></p>
         <h3 class="form-text">First Name</h3>
-        <input class="input" type="first name" placeholder="first name" name="firstName" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["firstName"];}else{echo $userData["firstName"];} ?>" /><p class="error"><?php echo $errors["firstNameErr"] ?></p>
+        <input class="input" type="text" placeholder="first name" name="firstName" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["firstName"];}else{echo $userData["firstName"];} ?>" /><p class="error"><?php echo $errors["firstNameErr"] ?></p>
         <h3 class="form-text">Last Name</h3>
-        <input class="input" type="last name" placeholder="last name" name="lastName" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["lastName"];}else{echo $userData["lastName"];} ?>" /><p class="error"><?php echo $errors["lastNameErr"] ?></p>
+        <input class="input" type="text" placeholder="last name" name="lastName" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["lastName"];}else{echo $userData["lastName"];} ?>" /><p class="error"><?php echo $errors["lastNameErr"] ?></p>
         <h3 class="form-text">Birthday</h3>
         <input class="input" type="date" placeholder="birthday" name="birthday" value="<?php if (isset($_POST["submitCreate"])) {echo $_POST["birthday"];}else{echo $userData["birthday"];} ?>" /><p class="error"><?php echo $errors["birthdayErr"] ?></p>
         <h3 class="form-text">Active</h3>

@@ -49,6 +49,13 @@ class DbModel
         return $data;
     }
 
+    public function getById($id) {
+        $query = "SELECT * FROM myapp.users WHERE user_id={$id}";
+        $db = DBAdapter::getInstance();
+        $resultExec = $db->execSQL($query);
+        return mysqli_fetch_assoc($resultExec);
+    }
+
     public function edit($idFromTable, $data)
     {
         unset($data["submitEdit"]);

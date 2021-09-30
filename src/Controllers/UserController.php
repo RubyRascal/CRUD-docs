@@ -4,6 +4,8 @@ use Models\DbAdapter;
 use Models\userModel;
 use Views\viewListUser;
 use Views\viewUser;
+use Form\Builder;
+use Form\UserForm;
 use Validators\UserValidator;
 class UserController
 {
@@ -19,25 +21,34 @@ class UserController
 
     public function create()
     {
-        $userData = array(
-            'login' => $_POST["login"],
-            'firstName' => $_POST["firstName"],
-            'lastName' => $_POST["lastName"],
-            'birthday' => $_POST["birthday"],
-            'active' => $_POST["active"]
-        );
+        $id = 1;
+        $form = new UserForm();
+        $form->setModel(userModel::class);
+        $form->load($id);
 
-        if(isset($_POST["submitCreate"])){
-            $model = new \Models\userModel();
-            $validate = UserValidator::validateForm($userData);
-            $model->create($validate["result"]);
+        if ($form->isValid()){
+            //$form->save();
         }
-
-        if ($validate["result"]["correct"]){
-          header('Location: /users');
-        }else{
-            $this->view($validate["result"], $validate["errors"]);
-        }
+        $form->render();
+//        $userData = array(
+//            'login' => $_POST["login"],
+//            'firstName' => $_POST["firstName"],
+//            'lastName' => $_POST["lastName"],
+//            'birthday' => $_POST["birthday"],
+//            'active' => $_POST["active"]
+//        );
+//
+//        if(isset($_POST["submitCreate"])){
+//            $model = new \Models\userModel();
+//            $validate = UserValidator::validateForm($userData);
+//            $model->create($validate["result"]);
+//        }
+//
+//        if ($validate["result"]["correct"]){
+//          header('Location: /users');
+//        }else{
+//            $this->view($validate["result"], $validate["errors"]);
+//        }
     }
 
     public function edit()
