@@ -22,7 +22,6 @@ class DbModel
 
     public function create($data)
     {
-        unset($data["correct"]);
         $columns_part = '';
         $values_part = '';
 
@@ -42,11 +41,12 @@ class DbModel
         $columns_part = "(" . $columns_part  . ")";
         $values_part = "(" . $values_part  . ")";
 
-        $query = "INSERT INTO $this->table $columns_part VALUES $values_part";
+        $query = "INSERT INTO $this->table $columns_part VALUES {$values_part}";
         $db = DbAdapter::getInstance();
         $conn = $db->getConnect();
         $result = $db->execSQL($query);
         return $data;
+
     }
 
     public function getById($id) {
@@ -72,30 +72,30 @@ class DbModel
         $conn = $db->getConnect();
         $result = $db->execSQL($query);
 
-        if (DocController::class){
-            $editData = array(
-                'organization' => $data['organization'],
-                'agent' => $data['agent'],
-                'podpisan' => $data['podpisan'],
-                'dateStart' => $data['dateStart'],
-                'dateFinish' => $data['dateFinish'],
-                'item' => $data['item'],
-                'money' => $data['money'],
-                'urAddress' => $data['urAddress'],
-                'fizAddress' => $data['fizAddress'],
-                'INN' => $data['INN'],
-                'payment' => $data['payment']
-            );
-        }else{
-            $editData = array(
-                'login' => $data['login'],
-                'firstName' => $data['firstName'],
-                'lastName' => $data['lastName'],
-                'birthday' => $data['birthday'],
-                'active' => $data['active']
-            );
-        }
-        return $editData;
+//        if (DocController::class){
+//            $editData = array(
+//                'organization' => $data['organization'],
+//                'agent' => $data['agent'],
+//                'podpisan' => $data['podpisan'],
+//                'dateStart' => $data['dateStart'],
+//                'dateFinish' => $data['dateFinish'],
+//                'item' => $data['item'],
+//                'money' => $data['money'],
+//                'urAddress' => $data['urAddress'],
+//                'fizAddress' => $data['fizAddress'],
+//                'INN' => $data['INN'],
+//                'payment' => $data['payment']
+//            );
+//        }else{
+//            $editData = array(
+//                'login' => $data['login'],
+//                'firstName' => $data['firstName'],
+//                'lastName' => $data['lastName'],
+//                'birthday' => $data['birthday'],
+//                'active' => $data['active']
+//            );
+//        }
+//        return $editData;
     }
 
     public function delete($id)

@@ -7,9 +7,10 @@ class AbstractItem
     protected $name;
     protected $value;
     protected $validationFunction;
+    protected $errors = [];
     protected $template = '';
 
-    public function __construct($name, $default = null, $label = null,  $validationFunction = null)
+    public function __construct($name, $default = null,  $validationFunction = null)
     {
         $this->name = $name;
         $this->validationFunction = $validationFunction;
@@ -18,19 +19,23 @@ class AbstractItem
     public function isValid() {
         if (isset($_POST[$this->name])) {
             $this->value = $_POST[$this->name];
+            if ($this->value == ''){
+                $this->errors[$this->name] = 'Field ' . $this->name . ' is null';
+            }
         }
-
+//        if (empty($this->value)){
+//            $this->errors = $this->validationFunction;
+//            return $this->errors;
+//        }
         $f = $this->validationFunction;
         if ($f) {
-            return $f($this->getValue());
+            return $f($this->getValue(), $this->getName());
         }
         return true;
     }
 
     public function getValue() {
-//        Router::getInstance()->getVar($this->name);
         return $this->value;
-
     }
 
     public function setValue($value) {

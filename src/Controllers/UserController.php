@@ -21,13 +21,12 @@ class UserController
 
     public function create()
     {
-        $id = 1;
         $form = new UserForm();
-        $form->setModel(userModel::class);
-        $form->load($id);
+//        $form->setModel(userModel::class);
+//        $form->load($id);
 
         if ($form->isValid()){
-            //$form->save();
+            $form->save();
         }
         $form->render();
 //        $userData = array(
@@ -53,34 +52,43 @@ class UserController
 
     public function edit()
     {
-        $model = new \Models\userModel();
-        $query = "SELECT * FROM myapp.users WHERE user_id={$_GET["id"]}";
-        $db = DBAdapter::getInstance();
-        $conn = $db->getConnect();
-        $resultExec = $db->execSQL($query);
-
-        while ($row = mysqli_fetch_assoc($resultExec)){
-            $data = $row;
+        $id = $_GET["id"];
+        $form = new UserForm();
+        $form->load($id);
+        if ($form->isValid()){
+            $form->save($id);
         }
-        if (count($_POST) ==0){
-            $userData = array(
-                'login' => $data["login"],
-                'firstName' => $data["firstName"],
-                'lastName' => $data["lastName"],
-                'birthday' => $data["birthday"],
-                'active' => $data["active"]
-            );
-            $this->view($userData, $validate["errors"]);
-        }
-        $result = $model->edit($_GET["id"], $_POST);
+        $form->render();
 
-        $validate = UserValidator::validateForm($result);
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"]) {
-            header('Location: /users');
-        }elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"] == false) {
-            $this->view($validate["result"], $validate["errors"]);
-        }
+//        $model = new \Models\userModel();
+//        $query = "SELECT * FROM myapp.users WHERE user_id={$_GET["id"]}";
+//        $db = DBAdapter::getInstance();
+//        $conn = $db->getConnect();
+//        $resultExec = $db->execSQL($query);
+//
+//        while ($row = mysqli_fetch_assoc($resultExec)){
+//            $data = $row;
+//        }
+//        if (count($_POST) ==0){
+//            $userData = array(
+//                'login' => $data["login"],
+//                'firstName' => $data["firstName"],
+//                'lastName' => $data["lastName"],
+//                'birthday' => $data["birthday"],
+//                'active' => $data["active"]
+//            );
+//            $this->view($userData, $validate["errors"]);
+//        }
+//        $result = $model->edit($_GET["id"], $_POST);
+//
+//        $validate = UserValidator::validateForm($result);
+//
+//        if ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"]) {
+//            header('Location: /users');
+//        }elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && $validate["result"]["correct"] == false) {
+//            $this->view($validate["result"], $validate["errors"]);
+//        }
     }
 
     public function view($result, $errors)

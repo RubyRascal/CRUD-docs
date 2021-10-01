@@ -6,7 +6,10 @@ use Form\Item\Date;
 use Form\Item\Submit;
 class Builder
 {
-    protected $model;
+    const ITEM_TYPE_TEXT = "text";
+    const ITEM_TYPE_DATE = "date";
+    protected $errors = [];
+    public $model;
 
     public function __construct()
     {
@@ -21,15 +24,14 @@ class Builder
 
     protected $elements = [];
 
-    public function add($type, $name, $label, $default = null, $validationFunction)
+    public function add($type, $name, $default = null, $validationFunction)
     {
-
-        if ($type == 'text') {
-            $this->elements[] = new Text($name, $label, $default, $validationFunction);
+        if ($type == self::ITEM_TYPE_TEXT) {
+            $this->elements[] = new Text($name, $default, $validationFunction);
         } elseif ($type == 'date') {
-            $this->elements[] = new Date($name, $label, $default, $validationFunction);
+            $this->elements[] = new Date($name, $default, $validationFunction);
         } elseif ($type == 'submit') {
-            $this->elements[] = new Submit($name, $label, $default, $validationFunction);
+            $this->elements[] = new Submit($name, $default, $validationFunction);
         }
     }
 
@@ -73,9 +75,7 @@ class Builder
         foreach ($this->elements as $element) {
             $element->render();
         }
-
         $elements = ob_get_clean();
-
         require("Views/form/form.php");
     }
 }
